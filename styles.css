@@ -1492,26 +1492,92 @@ img { max-width:100%; display:block; }
 
 @media (max-width:768px) {
     :root { --navbar-h:60px; }
+    html { font-size:15px; }
+    .container { padding:0 1rem; }
     .nav-menu { display:none; flex-direction:column; position:absolute; top:var(--navbar-h); left:0;right:0; background:rgba(255,255,255,0.98); backdrop-filter:blur(20px); padding:1rem; box-shadow:var(--shadow-md); gap:0.25rem; border-top:1px solid var(--border); }
     .nav-menu.open { display:flex; }
     .mobile-menu-btn { display:flex; }
+    .logo-main { font-size:1.1rem; }
+    .logo-icon { font-size:1.5rem; }
     .hero-title { font-size:2.2rem; }
+    .hero-badge { font-size:0.7rem; padding:0.3rem 0.8rem; }
+    .hero-buttons { gap:0.7rem; }
+    .btn-primary-hero, .btn-outline-hero { padding:0.8rem 1.5rem; font-size:0.95rem; }
+    .live-ticker { flex-direction:column; align-items:flex-start; gap:0.7rem; padding:0.8rem 1rem; }
+    .ticker-scroll { font-size:0.8rem; }
     .section { padding:3rem 0; }
-    .explore-grid { grid-template-columns:1fr; }
+    .section-title { font-size:1.8rem; margin-bottom:0.8rem; }
+    .section-sub { font-size:0.95rem; margin-bottom:1.5rem; }
+    .stat-card-new { padding:1.5rem 1rem; }
+    .stat-big { font-size:2rem; }
+    .stat-name { font-size:0.9rem; }
+    .stat-icon-wrap { width:48px; height:48px; font-size:1.2rem; }
+    .explore-grid { grid-template-columns:1fr; gap:1rem; }
+    .explore-card { padding:1.5rem; }
+    .finance-card { padding:1.5rem; }
+    .finance-num { font-size:2.5rem; top:0.8rem; right:1rem; }
+    .figure-card { padding:1rem; }
+    .figure-img { width:64px; height:64px; }
+    .figure-avatar { width:56px; height:56px; font-size:1rem; }
+    .swipe-card { padding:2rem 1.5rem; }
+    .swipe-card h3 { font-size:1.3rem; }
+    .card-emoji { font-size:2.5rem; }
     .charts-grid { grid-template-columns:1fr; }
-    .stats-grid-4 { grid-template-columns:1fr 1fr; }
+    .stats-grid-4 { grid-template-columns:1fr 1fr; gap:1rem; }
+    .ai-highlight-box { gap:2rem; }
+    .chat-bubble { font-size:0.85rem; padding:0.9rem 1rem; }
+    .creator-box { grid-template-columns:1fr; gap:2rem; padding:2rem 1.5rem; }
+    .creator-stats-mini { grid-template-columns:1fr; }
+    .creator-quote-box { padding:1.5rem; }
+    .quote-text { font-size:1rem; }
     .footer-grid { grid-template-columns:1fr; gap:1.5rem; }
     .history-timeline { padding-left:2rem; }
+    .history-timeline::before { left:15px; }
     .history-item { flex-direction:column; gap:0.5rem; }
+    .history-item::before { left:-2rem; }
     .history-year { min-width:auto; }
+    .history-content { padding:1rem; }
     .impact-table { font-size:0.82rem; }
+    .impact-table th, .impact-table td { padding:0.8rem 1rem; }
 }
 
 @media (max-width:480px) {
-    .stats-grid-4 { grid-template-columns:1fr; }
+    html { font-size:14px; }
+    .container { padding:0 0.8rem; }
+    .logo-main { font-size:1rem; }
+    .logo-sub { font-size:0.6rem; }
+    .logo-icon { font-size:1.3rem; }
+    .hero-section { min-height:80vh; }
+    .hero-inner { padding-top:2rem; padding-bottom:2rem; }
+    .hero-title { font-size:1.8rem; line-height:1.2; }
+    .hero-sub { font-size:0.9rem; }
+    .section { padding:2.5rem 0; }
+    .section-title { font-size:1.5rem; }
+    .section-sub { font-size:0.88rem; }
+    .stats-grid-4 { grid-template-columns:1fr; gap:1rem; }
+    .stat-card-new { padding:1.2rem 1rem; }
+    .stat-big { font-size:1.8rem; }
     .parties-grid { grid-template-columns:1fr; }
-    .figures-grid { grid-template-columns:1fr 1fr; }
-    .hero-buttons { flex-direction:column; }
-    .swipe-card { padding:1.5rem; }
+    .figures-grid { grid-template-columns:1fr 1fr; gap:0.8rem; }
+    .figure-card { padding:0.8rem; }
+    .figure-img { width:56px; height:56px; }
+    .figure-card h4 { font-size:0.9rem; }
+    .figure-card p { font-size:0.75rem; }
+    .hero-buttons { flex-direction:column; width:100%; }
+    .btn-primary-hero, .btn-outline-hero { width:100%; justify-content:center; }
+    .swipe-card { padding:1.5rem 1rem; }
+    .swipe-card h3 { font-size:1.2rem; }
+    .card-emoji { font-size:2rem; }
     .finance-grid { grid-template-columns:1fr; }
+    .finance-card { padding:1.2rem; }
+    .finance-num { font-size:2rem; }
+    .ai-suggest-btn { font-size:0.75rem; padding:0.4rem 0.8rem; }
+    .creator-box { padding:1.5rem 1rem; }
+    .creator-quote-box { padding:1.2rem; }
+    .quote-icon { font-size:2.5rem; }
+    .quote-text { font-size:0.95rem; }
+    .contact-btn { width:100%; justify-content:center; }
+    .history-timeline { padding-left:1.5rem; }
+    .history-timeline::before { left:10px; }
+    .history-item::before { left:-1.7rem; width:12px; height:12px; }
 }
