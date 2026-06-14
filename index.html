@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthPolitics — SA Politics, Economy & World News Made Simple</title>
+    <meta name="description" content="YouthPolitics — educating young South Africans about politics, economy, world affairs, financial literacy, and history. Fun, interactive, updated June 2026.">
+    <meta name="keywords" content="South Africa youth, black youth, SA politics, economy, financial literacy, ANC, EFF, DA, load shedding, youth unemployment, NSFAS, Pan Africanism 2026">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">✊🏾</span>
+            <div class="logo-text">
+                <span class="logo-main">YouthPolitics</span>
+                <span class="logo-sub">Knowledge is Power · June 2026</span>
+            </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="sa-politics.html" class="nav-link"><i class="fas fa-flag"></i> SA Politics</a></li>
+            <li><a href="world-politics.html" class="nav-link"><i class="fas fa-globe"></i> World Politics</a></li>
+            <li><a href="economy.html" class="nav-link"><i class="fas fa-chart-line"></i> Economy</a></li>
+            <li><a href="news.html" class="nav-link"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="VukaYouth-PitchDocument.html" class="nav-link"><i class="fas fa-file-alt"></i> About</a></li>
+            <li><button id="ai-chat-btn" class="ai-btn"><i class="fas fa-robot"></i> Ask AI</button></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero-section">
+    <div class="hero-bg-shapes">
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+        <div class="shape s3"></div>
+    </div>
+    <div class="container hero-inner">
+        <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Empowering SA Youth · June 2026</div>
+        <h1 class="hero-title">Politics Made Simple.<br><span class="gradient-text">Power Made Real.</span></h1>
+        <p class="hero-sub">Everything you need to know about SA politics, the economy, and your money — explained like you're chatting with a friend who actually knows their stuff. Updated daily with what's happening RIGHT NOW in South Africa.</p>
+        <div class="hero-buttons">
+            <button class="btn-primary-hero" id="hero-ai-btn"><i class="fas fa-robot"></i> Ask the AI Anything</button>
+            <a href="sa-politics.html" class="btn-outline-hero"><i class="fas fa-flag"></i> SA Politics</a>
+        </div>
+
+        <!-- Live Ticker -->
+        <div class="live-ticker">
+            <span class="ticker-label"><i class="fas fa-circle live-dot"></i> LIVE</span>
+            <div class="ticker-scroll">
+                <span>🔴 Youth Unemployment: <strong>59.7%</strong></span>
+                <span>💰 Inflation: <strong>5.3%</strong> (June 2026)</span>
+                <span>💵 USD/ZAR: <strong>R18.20</strong></span>
+                <span>📈 GDP Growth: <strong>1.2%</strong> (Q1 2026)</span>
+                <span>🎓 NSFAS: <strong>850K students</strong></span>
+                <span>⚡ Load Shedding 2026: <strong>DOWN 60%</strong></span>
+                <span>🗳️ GNU Coalition: <strong>2 years strong</strong></span>
+                <span>🌍 SA in BRICS+: <strong>11 countries</strong></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== QUICK STATS ===================== -->
+<section class="section stats-section">
+    <div class="container">
+        <div class="section-label">🔥 What's Happening RIGHT NOW — June 2026</div>
+        <h2 class="section-title" style="color:var(--text)">The Numbers You Need to Know</h2>
+        <p class="section-sub" style="color:#555">Updated daily from Stats SA, SARB, and government sources. Tap any card to learn more.</p>
+        <div class="stats-grid-4">
+            <div class="stat-card-new animate-on-scroll" onclick="askAITopic('Why is youth unemployment so high in South Africa in 2026?')" style="cursor:pointer">
+                <div class="stat-icon-wrap red"><i class="fas fa-users"></i></div>
+                <div class="stat-big" style="color:#1a1a1a">59.7%</div>
+                <div class="stat-name" style="color:#1a1a1a">Youth Unemployed</div>
+                <div class="stat-detail" style="color:#555">Still 6 in 10 young people jobless (Q1 2026)</div>
+                <div style="margin-top:0.5rem;font-size:0.75rem;color:#e63946;font-weight:600">📉 Down from 60.8% in 2025</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll" onclick="askAITopic('What is inflation and how does it affect me in South Africa?')" style="cursor:pointer">
+                <div class="stat-icon-wrap orange"><i class="fas fa-shopping-basket"></i></div>
+                <div class="stat-big" style="color:#1a1a1a">5.3%</div>
+                <div class="stat-name" style="color:#1a1a1a">Inflation Rate</div>
+                <div class="stat-detail" style="color:#555">Prices rising — June 2026</div>
+                <div style="margin-top:0.5rem;font-size:0.75rem;color:#f5a623;font-weight:600">📊 Lower than last year (was 5.9%)</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll" onclick="askAITopic('How is South Africa\'s economy doing in 2026?')" style="cursor:pointer">
+                <div class="stat-icon-wrap blue"><i class="fas fa-chart-line"></i></div>
+                <div class="stat-big" style="color:#1a1a1a">1.2%</div>
+                <div class="stat-name" style="color:#1a1a1a">GDP Growth</div>
+                <div class="stat-detail" style="color:#555">Economy growing faster — Q1 2026</div>
+                <div style="margin-top:0.5rem;font-size:0.75rem;color:#1976d2;font-weight:600">📈 BETTER than 2024 (was 0.6%)</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll" onclick="askAITopic('How is the GNU Government of National Unity doing in 2026?')" style="cursor:pointer">
+                <div class="stat-icon-wrap green"><i class="fas fa-handshake"></i></div>
+                <div class="stat-big" style="color:#1a1a1a">2 Years</div>
+                <div class="stat-name" style="color:#1a1a1a">GNU Coalition</div>
+                <div class="stat-detail" style="color:#555">ANC + DA still governing together</div>
+                <div style="margin-top:0.5rem;font-size:0.75rem;color:#1db954;font-weight:600">🤝 Formed May 2024</div>
+            </div>
+        </div>
+
+        <!-- NEW: Interactive Mini-Quiz -->
+        <div style="background:linear-gradient(135deg,#667eea,#764ba2);border-radius:var(--radius);padding:2rem;margin-top:2rem;text-align:center">
+            <h3 style="color:#fff;font-size:1.3rem;margin-bottom:0.8rem">⚡ Quick Challenge: Test Your Knowledge</h3>
+            <p style="color:rgba(255,255,255,0.85);margin-bottom:1.2rem">Which political party got the most votes in the 2024 elections?</p>
+            <div style="display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap">
+                <button class="quiz-btn" onclick="quizAnswer(false)">DA (Democratic Alliance)</button>
+                <button class="quiz-btn" onclick="quizAnswer(true)">ANC (40.2%)</button>
+                <button class="quiz-btn" onclick="quizAnswer(false)">EFF (Economic Freedom Fighters)</button>
+            </div>
+            <div id="quiz-result" style="margin-top:1rem;font-weight:700;color:#fff;font-size:0.95rem"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== TIKTOK-STYLE LEARN CARDS ===================== -->
+<section class="section learn-section">
+    <div class="container">
+        <div class="section-label" style="background:rgba(29,185,84,0.1);color:var(--green-dark)">Quick Lessons</div>
+        <h2 class="section-title" style="color:#1a1a1a !important">Learn in 60 Seconds <span class="emoji">⚡</span></h2>
+        <p class="section-sub" style="color:#555 !important">Swipe through bite-sized explanations. Tap any card to go deeper.</p>
+        <div class="swipe-cards" id="swipeCards">
+
+            <div class="swipe-card" data-topic="inflation">
+                <div class="card-emoji">📈</div>
+                <h3>What is Inflation? (June 2026)</h3>
+                <p>When prices go up over time, your R100 buys less than it did last year. SA inflation is 5.3% right now — that means if bread cost R20 last year, it costs <strong>R21.06</strong> now. Good news: it's DOWN from 5.9% last year.</p>
+                <div class="card-tags"><span>Economy</span><span>Finance</span></div>
+                <button class="card-deep-btn" onclick="askAITopic('What is inflation and how does it affect me as a young South African in 2026?')">Ask AI More <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="swipe-card" data-topic="gnu">
+                <div class="card-emoji">🤝</div>
+                <h3>What is the GNU?</h3>
+                <p>After the 2024 elections no party won alone. The ANC (40.2%), DA (21.8%) and 5 other parties formed the Government of National Unity (GNU) to run the country together.</p>
+                <div class="card-tags"><span>SA Politics</span><span>2024</span></div>
+                <button class="card-deep-btn" onclick="askAITopic('Explain the GNU Government of National Unity in simple terms')">Ask AI More <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="swipe-card" data-topic="brics">
+                <div class="card-emoji">🌍</div>
+                <h3>SA in BRICS — Why It Matters</h3>
+                <p>BRICS is a group of powerful countries: Brazil, Russia, India, China, South Africa. Being in BRICS means SA can access loans, trade deals and investment from these giants.</p>
+                <div class="card-tags"><span>World Politics</span><span>Economy</span></div>
+                <button class="card-deep-btn" onclick="askAITopic('Why is South Africa in BRICS and how does it affect us?')">Ask AI More <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="swipe-card" data-topic="loadshedding">
+                <div class="card-emoji">⚡</div>
+                <h3>Load Shedding Update: June 2026 🎉</h3>
+                <p>GREAT NEWS: Load shedding is DOWN 60% compared to 2024! New solar and wind power is working. We've had only 14 days of stage 2 in 2026 so far. Still some blackouts, but the crisis is finally easing. Private power generation and renewable energy FTW.</p>
+                <div class="card-tags"><span>SA Politics</span><span>Economy</span><span style="background:rgba(29,185,84,0.2);color:#14833b">✅ Getting Better</span></div>
+                <button class="card-deep-btn" onclick="askAITopic('Why is load shedding getting better in South Africa in 2026?')">Ask AI More <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="swipe-card" data-topic="investing">
+                <div class="card-emoji">💰</div>
+                <h3>How to Start Investing with R100</h3>
+                <p>You don't need to be rich to invest. ETFs (Exchange Traded Funds) let you invest in many companies at once with small amounts. Apps like EasyEquities let you start with R1.</p>
+                <div class="card-tags"><span>Finance</span><span>Youth</span></div>
+                <button class="card-deep-btn" onclick="askAITopic('How can a young South African start investing with little money?')">Ask AI More <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="swipe-card" data-topic="apartheid">
+                <div class="card-emoji">✊</div>
+                <h3>Why Apartheid Still Matters Today</h3>
+                <p>Apartheid ended in 1994 but its economic effects remain. The wealth gap between black and white South Africans is still one of the widest in the world (Gini 0.63).</p>
+                <div class="card-tags"><span>History</span><span>SA Politics</span></div>
+                <button class="card-deep-btn" onclick="askAITopic('How does apartheid still affect young black South Africans today?')">Ask AI More <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+        <div class="swipe-nav">
+            <button class="swipe-btn" id="prevCard" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="swipe-dots" id="swipeDots"></div>
+            <button class="swipe-btn" id="nextCard" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== MAIN SECTIONS ===================== -->
+<section class="section explore-section">
+    <div class="container">
+        <div class="section-label">Explore</div>
+        <h2 class="section-title" style="color:#1a1a1a">What Do You Want to Learn?</h2>
+        <div class="explore-grid">
+
+            <a href="sa-politics.html" class="explore-card sa-card animate-on-scroll">
+                <div class="explore-icon"><i class="fas fa-flag"></i></div>
+                <div class="explore-body">
+                    <h3>SA Politics</h3>
+                    <p>Parties, elections, political history, black consciousness, figures like Mandela, Biko, Ramaphosa and more. Who really runs the country?</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 2024 Election Results</li>
+                        <li><i class="fas fa-check"></i> Political Party Profiles</li>
+                        <li><i class="fas fa-check"></i> History of Black Politics</li>
+                        <li><i class="fas fa-check"></i> Political Family Trees</li>
+                    </ul>
+                </div>
+                <div class="explore-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="world-politics.html" class="explore-card world-card animate-on-scroll">
+                <div class="explore-icon"><i class="fas fa-globe"></i></div>
+                <div class="explore-body">
+                    <h3>World Politics</h3>
+                    <p>Wars, alliances, climate, and how global decisions made by the US, Russia, China and others directly affect your life in South Africa.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Russia-Ukraine War Impact on SA</li>
+                        <li><i class="fas fa-check"></i> Gaza & Global Response</li>
+                        <li><i class="fas fa-check"></i> BRICS & African Union</li>
+                        <li><i class="fas fa-check"></i> Climate Change & SA</li>
+                    </ul>
+                </div>
+                <div class="explore-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="economy.html" class="explore-card eco-card animate-on-scroll">
+                <div class="explore-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="explore-body">
+                    <h3>Economy & Finance</h3>
+                    <p>Understand money, budgets, investing, saving, and how the economic system works — and how you can benefit from it right now.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> How to Save & Invest</li>
+                        <li><i class="fas fa-check"></i> Property Investment 101</li>
+                        <li><i class="fas fa-check"></i> Understanding the Budget</li>
+                        <li><i class="fas fa-check"></i> Side Hustles & Entrepreneurship</li>
+                    </ul>
+                </div>
+                <div class="explore-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="news.html" class="explore-card news-card animate-on-scroll">
+                <div class="explore-icon"><i class="fas fa-newspaper"></i></div>
+                <div class="explore-body">
+                    <h3>News & Current Affairs</h3>
+                    <p>Breaking news explained simply. We break down what's happening, who's involved, and why it matters to you as a young South African.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> SA News Simplified</li>
+                        <li><i class="fas fa-check"></i> World News Impact on SA</li>
+                        <li><i class="fas fa-check"></i> Background Context</li>
+                        <li><i class="fas fa-check"></i> Ask AI to Explain Any Story</li>
+                    </ul>
+                </div>
+                <div class="explore-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FINANCIAL LITERACY ===================== -->
+<section class="section finance-section">
+    <div class="container">
+        <div class="section-label">Financial Literacy</div>
+        <h2 class="section-title" style="color:#1a1a1a">Your Money. Your Power. <span class="emoji">💸</span></h2>
+        <p class="section-sub" style="color:#555">Most schools don't teach you this. We do.</p>
+        <div class="finance-grid">
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">01</div>
+                <h3><i class="fas fa-piggy-bank"></i> Start Saving Now</h3>
+                <p>Even R50/month grows. Put it in a tax-free savings account (TFSA). After 10 years at 10% interest, R500/month becomes <strong>over R100,000</strong>.</p>
+                <button class="finance-ask" onclick="askAITopic('How do I start saving money as a young South African with no income?')">How do I start? <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">02</div>
+                <h3><i class="fas fa-home"></i> Property Investment</h3>
+                <p>You can buy property with no deposit using a 100% bond. Rental income can pay your bond. Property value grows with inflation. Start learning now.</p>
+                <button class="finance-ask" onclick="askAITopic('How can a young black South African invest in property?')">How do I start? <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">03</div>
+                <h3><i class="fas fa-chart-pie"></i> Invest in the Stock Market</h3>
+                <p>ETFs on EasyEquities let you own small pieces of companies like Amazon, Naspers, and Sasol. Start with R1. Your money grows while you sleep.</p>
+                <button class="finance-ask" onclick="askAITopic('What are ETFs and how do I buy them in South Africa?')">How do I start? <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">04</div>
+                <h3><i class="fas fa-lightbulb"></i> Skills = Income</h3>
+                <p>Coding, digital marketing, video editing, carpentry — any skill you master can make you money. Freelance platforms like Upwork pay in USD.</p>
+                <button class="finance-ask" onclick="askAITopic('What skills can a young South African learn to make money online?')">Which skills? <i class="fas fa-robot"></i></button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===================== POLITICAL FIGURES TREE ===================== -->
+<section class="section figures-section">
+    <div class="container">
+        <div class="section-label" style="background:rgba(29,185,84,0.1);color:var(--green-dark)">Know Your Leaders</div>
+        <h2 class="section-title" style="color:#1a1a1a !important">Who Are These People? <span class="emoji">🧠</span></h2>
+        <p class="section-sub" style="color:#555 !important">Understand every political figure — their history, their power, their influence. Featuring leaders past and present, men and women who shaped South Africa.</p>
+        <div class="figures-grid">
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Tell me about Nelson Mandela — his full political story and legacy for young South Africans')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/220px-Nelson_Mandela_1994.jpg" alt="Nelson Mandela" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#014421,#1a6b3a);display:none">NM</div>
+                <h4>Nelson Mandela</h4>
+                <span class="figure-role">First Democratic President</span>
+                <p>Spent 27 years in prison fighting apartheid. Led SA into democracy in 1994. Nobel Peace Prize winner. Father of the nation.</p>
+                <div class="figure-party anc-tag">ANC</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Tell me about Winnie Madikizela-Mandela — the Mother of the Nation and her fight for freedom')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Winnie_Mandela_%281997%29.jpg/220px-Winnie_Mandela_%281997%29.jpg" alt="Winnie Madikizela-Mandela" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#7b0000,#c0392b);display:none">WM</div>
+                <h4>Winnie Madikizela-Mandela</h4>
+                <span class="figure-role">Mother of the Nation</span>
+                <p>Fought apartheid while Nelson was imprisoned. Defied bans, detention, torture. Controversial but fearless anti-apartheid icon.</p>
+                <div class="figure-party anc-tag">ANC</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Tell me about Steve Biko and Black Consciousness — why does it matter for South African youth today?')">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/SteveBiko.jpg/220px-SteveBiko.jpg" alt="Steve Biko" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#1c1c1c,#4a4a4a);display:none">SB</div>
+                <h4>Steve Biko</h4>
+                <span class="figure-role">Black Consciousness Pioneer</span>
+                <p>Founder of Black Consciousness Movement. Murdered by apartheid police in 1977 aged 30. His philosophy transformed black identity.</p>
+                <div class="figure-party bc-tag">History</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Who was Albertina Sisulu and what was her role in the fight against apartheid?')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Albertina_Sisulu.jpg/220px-Albertina_Sisulu.jpg" alt="Albertina Sisulu" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#6a1b4d,#a53860);display:none">AS</div>
+                <h4>Albertina Sisulu</h4>
+                <span class="figure-role">Ma Sisulu</span>
+                <p>Nurse, activist, ANC Women's League leader. While her husband Walter was imprisoned 26 years, she led resistance on the ground.</p>
+                <div class="figure-party anc-tag">ANC</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Tell me about Cyril Ramaphosa — his history, politics, and relationship with young South Africans')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Cyril_Ramaphosa_2019.jpg/220px-Cyril_Ramaphosa_2019.jpg" alt="Cyril Ramaphosa" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#1a472a,#2d6a4f);display:none">CR</div>
+                <h4>Cyril Ramaphosa</h4>
+                <span class="figure-role">President of SA</span>
+                <p>Former trade unionist, Mandela's chosen successor. President since 2018. Leading the GNU coalition government since 2024.</p>
+                <div class="figure-party anc-tag">ANC</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Tell me about Julius Malema — his history, EFF, and his influence on young South Africans')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Julius_Malema_2023.jpg/220px-Julius_Malema_2023.jpg" alt="Julius Malema" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#7b0000,#c0392b);display:none">JM</div>
+                <h4>Julius Malema</h4>
+                <span class="figure-role">EFF Commander-in-Chief</span>
+                <p>Former ANC Youth League president turned radical opposition leader. Founded EFF 2013. Champions land reform and economic freedom.</p>
+                <div class="figure-party eff-tag">EFF</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Who was Lilian Ngoyi and why was she a leader in the anti-apartheid movement?')">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#8e44ad,#c39bd3)">LN</div>
+                <h4>Lilian Ngoyi</h4>
+                <span class="figure-role">First Woman ANC Leader</span>
+                <p>Led 20,000 women in 1956 anti-pass march. First woman elected to ANC's National Executive. Icon of women's resistance.</p>
+                <div class="figure-party anc-tag">History</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Who was Chris Hani and why was his assassination important in South African history?')">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Chris_Hani.jpg/220px-Chris_Hani.jpg" alt="Chris Hani" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#2c1810,#5c3120);display:none">CH</div>
+                <h4>Chris Hani</h4>
+                <span class="figure-role">SACP Leader (1942–1993)</span>
+                <p>Communist Party leader and MK commander. Assassinated 1993 — nearly derailed democracy. A people's hero.</p>
+                <div class="figure-party sacp-tag">SACP / History</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Who is John Steenhuisen and what does the DA represent for young South Africans?')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/John_Steenhuisen_2022.jpg/220px-John_Steenhuisen_2022.jpg" alt="John Steenhuisen" class="figure-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#003580,#0056b3);display:none">JS</div>
+                <h4>John Steenhuisen</h4>
+                <span class="figure-role">DA Leader</span>
+                <p>Leader of Democratic Alliance, second largest party. Part of GNU since 2024. Focuses on economic growth and anti-corruption.</p>
+                <div class="figure-party da-tag">DA</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Tell me about Fatima Meer and her contribution to South African history')">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#16a085,#1abc9c)">FM</div>
+                <h4>Fatima Meer</h4>
+                <span class="figure-role">Writer & Activist</span>
+                <p>First black sociologist in SA. Close friend of Mandelas. Banned, detained, house arrested for 13 years. Wrote Mandela's biography.</p>
+                <div class="figure-party bc-tag">History</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Who was Ruth First and how did she fight apartheid?')">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#d35400,#e67e22)">RF</div>
+                <h4>Ruth First</h4>
+                <span class="figure-role">Journalist & Revolutionary</span>
+                <p>Investigative journalist, author, academic. Exposed apartheid brutality. Detained without trial. Killed by letter bomb in 1982.</p>
+                <div class="figure-party sacp-tag">SACP / History</div>
+            </div>
+
+            <div class="figure-card animate-on-scroll" onclick="askAITopic('Who is Lindiwe Sisulu and what is her role in South African politics today?')">
+                <div class="figure-avatar" style="background:linear-gradient(135deg,#8e44ad,#9b59b6)">LS</div>
+                <h4>Lindiwe Sisulu</h4>
+                <span class="figure-role">Cabinet Minister</span>
+                <p>Daughter of Walter and Albertina Sisulu. Minister in every democratic government since 1994. Currently Minister of Tourism.</p>
+                <div class="figure-party anc-tag">ANC</div>
+            </div>
+
+        </div>
+        <div class="figures-cta">
+            <p style="color:#555 !important">Want to know about any other political figure?</p>
+            <button class="btn-primary-hero" onclick="document.getElementById('ai-chat-btn').click()"><i class="fas fa-robot"></i> Ask the AI About Any Leader</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== IMPACT TABLE ===================== -->
+<section class="section impact-section">
+    <div class="container">
+        <div class="section-label">Reality Check</div>
+        <h2 class="section-title" style="color:#1a1a1a">How World Events Hit SA Youth</h2>
+        <div class="impact-table-wrap">
+            <table class="impact-table">
+                <thead>
+                    <tr>
+                        <th>World Event</th>
+                        <th>How It Affects SA</th>
+                        <th>Impact on You</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>🇺🇦 Russia-Ukraine War</strong></td>
+                        <td>Oil & food prices rise globally</td>
+                        <td>Higher fuel & bread prices in SA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🌡️ Climate Change</strong></td>
+                        <td>Droughts, floods, crop failures in SA</td>
+                        <td>Food insecurity, job losses in farming</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🇺🇸 US Interest Rate Hikes</strong></td>
+                        <td>Rand weakens, investors leave SA</td>
+                        <td>Everything imported costs more</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🇨🇳 China Economic Slowdown</strong></td>
+                        <td>Less demand for SA minerals (iron, coal)</td>
+                        <td>Mining job losses, slower GDP</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🌍 AfCFTA Free Trade</strong></td>
+                        <td>SA can sell more to other African countries</td>
+                        <td>New jobs, new markets for entrepreneurs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="impact-cta">
+            <button class="btn-primary-hero" onclick="askAITopic('How do world events affect South African youth economically?')"><i class="fas fa-robot"></i> Explain This Deeper</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== AI SECTION ===================== -->
+<section class="section ai-highlight-section">
+    <div class="container">
+        <div class="ai-highlight-box">
+            <div class="ai-highlight-left">
+                <div class="section-label" style="background:rgba(29,185,84,0.1);color:var(--green-dark)">AI Assistant</div>
+                <h2 style="color:#1a1a1a !important">Don't Understand Something? <span style="color:#1db954 !important">Just Ask.</span></h2>
+                <p style="color:#1a1a1a !important">Our AI explains complex politics and economics in simple, clear language — like a knowledgeable friend who has no hidden agenda. Ask about any news story, any politician, any economic concept.</p>
+                <div class="ai-suggestions-list">
+                    <button class="ai-suggest-btn" onclick="askAITopic('What is the ANC and how has it changed since 1994?')">What is the ANC?</button>
+                    <button class="ai-suggest-btn" onclick="askAITopic('How does the South African Reserve Bank control inflation?')">How does inflation work?</button>
+                    <button class="ai-suggest-btn" onclick="askAITopic('What is the history of land in South Africa and why is there a debate about expropriation?')">Land Expropriation?</button>
+                    <button class="ai-suggest-btn" onclick="askAITopic('How can I invest in property as a young South African with no money?')">Property Investment?</button>
+                    <button class="ai-suggest-btn" onclick="askAITopic('What is NSFAS and how do I apply?')">How does NSFAS work?</button>
+                    <button class="ai-suggest-btn" onclick="askAITopic('What is Black Consciousness and why does it matter?')">Black Consciousness?</button>
+                </div>
+            </div>
+            <div class="ai-highlight-right">
+                <div class="ai-chat-preview">
+                    <div class="chat-bubble user-bubble">Why is youth unemployment so high in South Africa?</div>
+                    <div class="chat-bubble ai-bubble">
+                        <strong>🤖 YouthPolitics AI:</strong> Youth unemployment in SA is 59.7% — the highest in the world for a major economy. There are 3 main reasons: <strong>(1)</strong> Apartheid destroyed black education and economic inclusion. <strong>(2)</strong> SA's economy isn't growing fast enough to create jobs. <strong>(3)</strong> Many young people's skills don't match what employers need. The good news: the YES program and digital economy are creating new opportunities. Want me to explain how to access them?
+                    </div>
+                    <button class="open-ai-full" id="open-ai-full-btn"><i class="fas fa-comments"></i> Open Full AI Chat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ABOUT THE CREATOR ===================== -->
+<section class="section creator-section">
+    <div class="container">
+        <div class="section-label">Meet the Creator</div>
+        <h2 class="section-title" style="color:#1a1a1a">Built by a Young Woman, For the Youth 💪</h2>
+        <div class="creator-box">
+            <div class="creator-content">
+                <div class="creator-badge">👩🏾‍💻 Student | Developer </div>
+                <h3 style="color:#1a1a1a;font-size:1.8rem;margin-bottom:0.5rem">Bongiwe Mokhati</h3>
+                <p style="color:var(--green-dark);font-weight:700;margin-bottom:1.5rem">Computer Science Student | Tshwane University of Technology</p>
+                
+                <div class="creator-story">
+                    <p><strong>YouthPolitics is my original idea.</strong> I created this platform because I experienced the same struggle many young South Africans face: wanting to understand politics and economics, but finding most information too complex or inaccessible.</p>
+                    
+                    <p>As a Computer Science student, I realized I could use my skills to solve this problem. While scrolling through TikTok and social media, I saw that young people DO care about what's happening, they just need information explained in a way that makes sense.</p>
+                    
+                    <p>So I built YouthPolitics. What started as a tool to help me understand the world has grown into a platform that can empower an entire generation. This isn't just a website, it's proof that young people in tech can create solutions that change lives.</p>
+                    
+                    <p><strong>My vision:</strong> A generation of informed young South Africans who have the knowledge and confidence to engage in discussions, make informed decisions, and shape the future of our country.</p>
+                </div>
+
+                <div class="creator-stats-mini">
+                    <div class="mini-stat">
+                        <span class="mini-stat-icon">🎓</span>
+                        <span class="mini-stat-text">Computer Science @ TUT</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-icon">💻</span>
+                        <span class="mini-stat-text">Built with proper research</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-icon">🇿🇦</span>
+                        <span class="mini-stat-text">For SA Youth</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-icon">👩🏾</span>
+                        <span class="mini-stat-text">Young woman in tech</span>
+                    </div>
+                </div>
+
+                <div class="creator-contact">
+                    <h4 style="color:#1a1a1a;margin-bottom:0.8rem">📧 Get in Touch</h4>
+                    <p style="color:#555;margin-bottom:1rem">Want to collaborate, provide feedback, or partner with YouthPolitics?</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:bongiwe.youthpolitics@gmail.com" class="contact-btn" style="background:var(--green);color:#fff">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                        <a href="https://linkedin.com/in/bongiwe-mokhati" target="_blank" class="contact-btn" style="background:var(--blue);color:#fff">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                    <p style="font-size:0.85rem;color:#666;margin-top:1rem">
+                        <strong>Available for:</strong> Research partnerships • Student collaborations •
+                    </p>
+                </div>
+            </div>
+            
+            <div class="creator-quote-box">
+                <div class="quote-icon">"</div>
+                <p class="quote-text">I created YouthPolitics because I believe that every young South African deserves access to information that empowers them to understand and participate in shaping our country's future.</p>
+                <p class="quote-author">— Bongiwe Mokhati, Founder & Developer</p>
+                
+                <div class="achievement-badges-display" style="margin-top:2rem">
+                    <h4 style="color:#1a1a1a;font-size:0.95rem;margin-bottom:1rem">🏆 Project Achievements</h4>
+                    <div class="badge-list">
+                        <div class="badge-item">✅ Fully functional political education platform</div>
+                        <div class="badge-item">✅ Built independently by a student</div>
+                        <div class="badge-item">✅ 100% free for all SA youth</div>
+                        <div class="badge-item">✅ Interactive AI assistant</div>
+                        <div class="badge-item">✅ Gamified learning experience</div>
+                        <div class="badge-item">✅ Mobile-responsive design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== HISTORY SECTION ===================== -->
+<section class="section history-section">
+    <div class="container">
+        <div class="section-label">Know Your Roots</div>
+        <h2 class="section-title" style="color:#1a1a1a">The History You Need to Know <span class="emoji">📖</span></h2>
+        <div class="history-timeline">
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1960</div>
+                <div class="history-content">
+                    <h4>Sharpeville Massacre</h4>
+                    <p>69 black protesters killed by apartheid police. This moment turned the ANC to armed resistance and shocked the world. The ANC was banned.</p>
+                    <button class="history-ask" onclick="askAITopic('Tell me about the Sharpeville Massacre and its impact on South African history')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1976</div>
+                <div class="history-content">
+                    <h4>Soweto Uprising</h4>
+                    <p>Students — YOUR age — rose up against Bantu Education. Hector Pieterson was shot dead. This moment changed South Africa forever.</p>
+                    <button class="history-ask" onclick="askAITopic('Tell me about the Soweto Uprising of 1976 and the student heroes')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1994</div>
+                <div class="history-content">
+                    <h4>Freedom Day — First Democratic Election</h4>
+                    <p>For the first time, all South Africans could vote. Nelson Mandela became president. But economic inequality was left largely intact.</p>
+                    <button class="history-ask" onclick="askAITopic('What happened in the 1994 South African elections and what did democracy change?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2015</div>
+                <div class="history-content">
+                    <h4>#FeesMustFall</h4>
+                    <p>Students shut down universities demanding free education. Government froze fee increases. The movement showed the power of youth activism.</p>
+                    <button class="history-ask" onclick="askAITopic('What was #FeesMustFall and what did it achieve for South African students?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2024</div>
+                <div class="history-content">
+                    <h4>ANC Loses Majority — GNU Formed</h4>
+                    <p>The ANC received only 40.2% of votes — first time below 50% since 1994. A coalition government was formed. A new era of South African politics began.</p>
+                    <button class="history-ask" onclick="askAITopic('What happened in the 2024 South African elections and what does the GNU mean?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">✊🏾 YouthPolitics</div>
+                <p>Built for the black youth of South Africa. Know your politics. Understand your economy. Own your future.</p>
+                <p class="footer-updated"><i class="fas fa-clock"></i> Last updated: June 2026</p>
+                <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1)">
+                    <p style="font-size:0.85rem;font-weight:600;color:var(--green);margin-bottom:0.5rem">💡 Created by Bongiwe Mokhati</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.6)">Computer Science Student | TUT<br>An original project built to empower SA youth</p>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h5>Sections</h5>
+                <ul>
+                    <li><a href="sa-politics.html"><i class="fas fa-flag"></i> SA Politics</a></li>
+                    <li><a href="world-politics.html"><i class="fas fa-globe"></i> World Politics</a></li>
+                    <li><a href="economy.html"><i class="fas fa-chart-line"></i> Economy & Finance</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h5>Learn About</h5>
+                <ul>
+                    <li><a href="#" onclick="askAITopic('History of black politics in South Africa')"><i class="fas fa-book"></i> Black Political History</a></li>
+                    <li><a href="#" onclick="askAITopic('How to save and invest as a young South African')"><i class="fas fa-piggy-bank"></i> Financial Literacy</a></li>
+                    <li><a href="#" onclick="askAITopic('How does property investment work in South Africa?')"><i class="fas fa-home"></i> Property Investment</a></li>
+                    <li><a href="#" onclick="askAITopic('What skills should young South Africans learn to earn money?')"><i class="fas fa-graduation-cap"></i> Skills Development</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h5>Data Sources</h5>
+                <ul>
+                    <li><a href="https://www.statssa.gov.za" target="_blank">Stats SA</a></li>
+                    <li><a href="https://www.resbank.co.za" target="_blank">SA Reserve Bank</a></li>
+                    <li><a href="https://www.treasury.gov.za" target="_blank">National Treasury</a></li>
+                    <li><a href="https://www.worldbank.org" target="_blank">World Bank</a></li>
+                    <li><a href="https://www.parliament.gov.za" target="_blank">Parliament of SA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 YouthPolitics Platform. Built to educate the South African black youth. Not affiliated with any political party.</p>
+            <p class="footer-data-note">Statistics current as of June 2026. Data sourced from Stats SA, SARB, World Bank, IEC, and National Treasury.</p>
+            <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:0.8rem">
+                Created with ❤️ by <strong style="color:var(--green)">Bongiwe Mokhati</strong> | A young woman using tech to empower her generation
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- AI Chat Modal -->
+<div id="ai-chat-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-robot"></i> YouthPolitics AI — Ask Me Anything</h3>
+            <button class="close-modal" id="closeModal" aria-label="Close">&times;</button>
+        </div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="chat-input-row">
+                <input type="text" id="chat-input" placeholder="Ask about politics, economy, history, finance..." autocomplete="off">
+                <button id="send-btn" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="data-service.js"></script>
+<script src="script.js"></script>
+<script>
+// ===================== HOME PAGE SCRIPTS =====================
+
+// Swipe Cards
+(function() {
+    const cards = document.querySelectorAll('.swipe-card');
+    const dotsContainer = document.getElementById('swipeDots');
+    let current = 0;
+
+    cards.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'swipe-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    function goTo(n) {
+        cards[current].classList.remove('active');
+        dotsContainer.children[current].classList.remove('active');
+        current = (n + cards.length) % cards.length;
+        cards[current].classList.add('active');
+        dotsContainer.children[current].classList.add('active');
+    }
+
+    cards[0].classList.add('active');
+    document.getElementById('nextCard').addEventListener('click', () => goTo(current + 1));
+    document.getElementById('prevCard').addEventListener('click', () => goTo(current - 1));
+
+    // Auto-advance
+    setInterval(() => goTo(current + 1), 6000);
+})();
+
+// Animate on scroll
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+// Scroll progress
+window.addEventListener('scroll', () => {
+    const bar = document.getElementById('scrollProgress');
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (bar) bar.style.width = pct + '%';
+});
+
+// Open AI full chat button
+document.getElementById('open-ai-full-btn').addEventListener('click', () => {
+    document.getElementById('ai-chat-btn').click();
+});
+document.getElementById('hero-ai-btn').addEventListener('click', () => {
+    document.getElementById('ai-chat-btn').click();
+});
+
+// Timestamps
+document.addEventListener('DOMContentLoaded', function() {
+    const el = document.getElementById('current-date');
+    if (el) el.textContent = new Date().toLocaleDateString('en-ZA', { year:'numeric',month:'long',day:'numeric' });
+});
+
+// Global AI topic helper used across cards
+function askAITopic(q) {
+    document.getElementById('ai-chat-btn').click();
+    setTimeout(() => {
+        const input = document.getElementById('chat-input');
+        if (input) {
+            input.value = q;
+            document.getElementById('send-btn').click();
+        }
+    }, 400);
+}
+window.askAITopic = askAITopic;
+</script>
+</body>
+</html>

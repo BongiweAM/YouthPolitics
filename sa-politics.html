@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Politics — YouthPolitics | South African Political Education</title>
+    <meta name="description" content="South African politics explained for the black youth — parties, history, political figures, elections, land reform and more. Updated June 2026.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">✊🏾</span>
+            <div class="logo-text">
+                <span class="logo-main">YouthPolitics</span>
+                <span class="logo-sub">Knowledge is Power · June 2026</span>
+            </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="sa-politics.html" class="nav-link active"><i class="fas fa-flag"></i> SA Politics</a></li>
+            <li><a href="world-politics.html" class="nav-link"><i class="fas fa-globe"></i> World Politics</a></li>
+            <li><a href="economy.html" class="nav-link"><i class="fas fa-chart-line"></i> Economy</a></li>
+            <li><a href="news.html" class="nav-link"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="VukaYouth-PitchDocument.html" class="nav-link"><i class="fas fa-file-alt"></i> About</a></li>
+            <li><button id="ai-chat-btn" class="ai-btn"><i class="fas fa-robot"></i> Ask AI</button></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<main>
+
+<!-- Hero -->
+<section class="page-hero">
+    <div class="container">
+        <div class="section-label" style="margin:0 auto 1rem;display:inline-flex">Updated June 2026</div>
+        <h1><i class="fas fa-flag"></i> South African Politics</h1>
+        <p>Who really runs South Africa? What do the parties stand for? What is the history of black politics? Know your country — no jargon.</p>
+    </div>
+</section>
+
+<!-- 2024 Election Results -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">2024 Elections</div>
+        <h2 class="section-title">The Election That Changed Everything</h2>
+        <p class="section-sub">May 29, 2024 — for the first time since 1994, the ANC lost its majority. Here's what happened and what it means for you.</p>
+        <div class="stats-grid-4">
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap green"><i class="fas fa-vote-yea"></i></div>
+                <div class="stat-big">58.6%</div>
+                <div class="stat-name">Voter Turnout</div>
+                <div class="stat-detail">27.7 million registered voters</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap blue"><i class="fas fa-users"></i></div>
+                <div class="stat-big">52.3%</div>
+                <div class="stat-name">Youth Voted (18–29)</div>
+                <div class="stat-detail">Highest youth turnout in years</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap red"><i class="fas fa-gavel"></i></div>
+                <div class="stat-big">7</div>
+                <div class="stat-name">Parties in GNU</div>
+                <div class="stat-detail">Government of National Unity</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap orange"><i class="fas fa-users-cog"></i></div>
+                <div class="stat-big">89</div>
+                <div class="stat-name">MPs Under 35</div>
+                <div class="stat-detail">22.3% of Parliament</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Political Parties -->
+<section class="section" style="background:var(--white)">
+    <div class="container">
+        <div class="section-label">Political Parties</div>
+        <h2 class="section-title">The Parties — Who They Are & What They Stand For</h2>
+        <div class="parties-grid">
+            <div class="party-card anc animate-on-scroll">
+                <div class="party-header">
+                    <h3>ANC</h3>
+                    <div class="party-percentage">40.2%</div>
+                    <div class="seats-count">159 seats · Still governing (GNU)</div>
+                </div>
+                <p>African National Congress. Governed SA since 1994. Founded 1912. Led the anti-apartheid struggle. Nelson Mandela, Oliver Tambo, and Chris Hani were ANC leaders.</p>
+                <div class="party-stats">
+                    <div class="stat-item"><span class="stat-label">Youth Vote (18–29):</span><span class="stat-value">35.8%</span></div>
+                    <div class="stat-item"><span class="stat-label">Provincial Control:</span><span class="stat-value">7/9 provinces</span></div>
+                    <div class="stat-item"><span class="stat-label">Ideology:</span><span class="stat-value">Social democracy, non-racialism</span></div>
+                </div>
+                <div class="youth-policies">
+                    <h4>Youth Policies:</h4>
+                    <ul>
+                        <li>YES program — R21bn to create 1 million youth jobs</li>
+                        <li>NSFAS expansion to R47bn for free university</li>
+                        <li>National Health Insurance (NHI)</li>
+                        <li>Township economy support</li>
+                    </ul>
+                </div>
+                <button class="card-deep-btn" style="margin-top:1rem" onclick="askAITopic('Tell me everything about the ANC — its history, current policies, and what happened in 2024')">Ask AI: Full ANC Story <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="party-card da animate-on-scroll">
+                <div class="party-header">
+                    <h3>DA</h3>
+                    <div class="party-percentage">21.8%</div>
+                    <div class="seats-count">87 seats · In GNU</div>
+                </div>
+                <p>Democratic Alliance. Second largest party. Governs Western Cape. Center-right. Focuses on economic growth, anti-corruption, and efficient service delivery.</p>
+                <div class="party-stats">
+                    <div class="stat-item"><span class="stat-label">Youth Vote (18–29):</span><span class="stat-value">28.4%</span></div>
+                    <div class="stat-item"><span class="stat-label">Province:</span><span class="stat-value">Western Cape (best-run)</span></div>
+                    <div class="stat-item"><span class="stat-label">Ideology:</span><span class="stat-value">Liberal democracy, free market</span></div>
+                </div>
+                <div class="youth-policies">
+                    <h4>Youth Policies:</h4>
+                    <ul>
+                        <li>Youth wage subsidy to encourage employment</li>
+                        <li>Education voucher system</li>
+                        <li>Entrepreneurship support hubs</li>
+                        <li>Digital skills training</li>
+                    </ul>
+                </div>
+                <button class="card-deep-btn" style="margin-top:1rem" onclick="askAITopic('What does the DA stand for and is it good for black South Africans?')">Ask AI: DA Explained <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="party-card eff animate-on-scroll">
+                <div class="party-header">
+                    <h3>EFF</h3>
+                    <div class="party-percentage">9.5%</div>
+                    <div class="seats-count">39 seats · Opposition</div>
+                </div>
+                <p>Economic Freedom Fighters. Founded 2013 by Julius Malema. Radical left. Demands land expropriation without compensation, nationalization of mines and banks.</p>
+                <div class="party-stats">
+                    <div class="stat-item"><span class="stat-label">Youth Vote (18–29):</span><span class="stat-value">15.2%</span></div>
+                    <div class="stat-item"><span class="stat-label">Average MP Age:</span><span class="stat-value">34 years</span></div>
+                    <div class="stat-item"><span class="stat-label">Ideology:</span><span class="stat-value">Pan-Africanism, socialism</span></div>
+                </div>
+                <div class="youth-policies">
+                    <h4>Youth Policies:</h4>
+                    <ul>
+                        <li>Free quality education for ALL</li>
+                        <li>Land redistribution to youth</li>
+                        <li>Youth economic empowerment fund</li>
+                        <li>Free healthcare and social housing</li>
+                    </ul>
+                </div>
+                <button class="card-deep-btn" style="margin-top:1rem" onclick="askAITopic('Tell me about the EFF and Julius Malema — their ideology and impact on young South Africans')">Ask AI: EFF Full Story <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="party-card other animate-on-scroll">
+                <div class="party-header">
+                    <h3>Others</h3>
+                    <div class="party-percentage">28.5%</div>
+                    <div class="seats-count">115 seats (MKP, IFP, PA, FF+, etc.)</div>
+                </div>
+                <p>The MK Party (uMkhonto we Sizwe, Zuma's party) got 14.6% in its first election. IFP, Patriotic Alliance, FF+ and others also represent significant voter blocs.</p>
+                <div class="party-stats">
+                    <div class="stat-item"><span class="stat-label">MK Party:</span><span class="stat-value">58 seats (14.6%)</span></div>
+                    <div class="stat-item"><span class="stat-label">IFP:</span><span class="stat-value">17 seats</span></div>
+                    <div class="stat-item"><span class="stat-label">PA (Gayton McKenzie):</span><span class="stat-value">9 seats</span></div>
+                </div>
+                <div class="youth-policies">
+                    <h4>What They Represent:</h4>
+                    <ul>
+                        <li>MK Party: Pro-Zuma, anti-GNU, Zulu nationalism</li>
+                        <li>IFP: Inkatha Freedom Party — KZN rural communities</li>
+                        <li>PA: Coloured community, anti-drugs focus</li>
+                        <li>FF+: Afrikaner minority rights</li>
+                    </ul>
+                </div>
+                <button class="card-deep-btn" style="margin-top:1rem" onclick="askAITopic('What is the MK Party and why did so many people vote for Jacob Zuma?')">Ask AI: MK Party Story <i class="fas fa-robot"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Issues -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">Key Issues</div>
+        <h2 class="section-title">The Political Issues That Affect Your Life</h2>
+        <div class="issues-grid">
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-users"></i> Youth Unemployment</h3>
+                    <div class="urgency-badge critical">Critical</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">59.7%</span><span class="label">Youth Unemployed</span></div>
+                    <div class="stat"><span class="number">4.9M</span><span class="label">Jobless Youth (15–34)</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Party Responses:</h4>
+                    <ul>
+                        <li><strong>ANC:</strong> YES program — R21bn, 1 million jobs over 3 years</li>
+                        <li><strong>DA:</strong> Youth wage subsidy — lower tax burden for employers who hire youth</li>
+                        <li><strong>EFF:</strong> Radical economic transformation, nationalization</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>Impact on You</h4><p>Directly affects your job prospects. Stay informed about YES applications, learnerships, and digital economy opportunities. Your skills are your weapon.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-seedling"></i> Land Reform</h3>
+                    <div class="urgency-badge high">High Priority</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">72%</span><span class="label">Land owned by whites</span></div>
+                    <div class="stat"><span class="number">R3.9bn</span><span class="label">Land Reform Budget</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Party Positions:</h4>
+                    <ul>
+                        <li><strong>ANC:</strong> Expropriation with or without compensation — Section 25 amendment</li>
+                        <li><strong>DA:</strong> Market-based land redistribution only</li>
+                        <li><strong>EFF:</strong> Expropriation WITHOUT compensation — return land to the people</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>Impact on You</h4><p>Land is wealth. Understanding this debate is fundamental to understanding SA's inequality. This debate connects directly to who benefits from the economy.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="urgency-badge high">High Priority</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">R396bn</span><span class="label">Education Budget</span></div>
+                    <div class="stat"><span class="number">700K+</span><span class="label">NSFAS Students</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Key Debates:</h4>
+                    <ul>
+                        <li>NSFAS sustainability — can SA afford free education?</li>
+                        <li>Curriculum decolonization — teaching SA history properly</li>
+                        <li>Mother-tongue education vs English instruction</li>
+                        <li>TVET college quality vs universities</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>Impact on You</h4><p>Your access to higher education depends on NSFAS policy. Apply every year at nsfas.org.za. Track fee announcements. Education is your biggest wealth-building tool.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-bolt"></i> Load Shedding & Eskom</h3>
+                    <div class="urgency-badge high">Urgent</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">2,800</span><span class="label">Hours of blackouts (2024)</span></div>
+                    <div class="stat"><span class="number">R400bn</span><span class="label">Annual economic damage</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Solutions Being Implemented:</h4>
+                    <ul>
+                        <li>Private power generation now legal (IPPs)</li>
+                        <li>Government took on R280bn of Eskom debt</li>
+                        <li>New solar and wind projects approved</li>
+                        <li>Just Energy Transition — $8.5bn from rich countries</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>Impact on You</h4><p>Every hour of load shedding costs businesses money and destroys jobs. But it also creates OPPORTUNITIES in renewable energy — solar installation is one of SA's fastest growing careers.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-shield-virus"></i> Corruption & State Capture</h3>
+                    <div class="urgency-badge critical">Critical</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">R500bn+</span><span class="label">Stolen during State Capture</span></div>
+                    <div class="stat"><span class="number">41/100</span><span class="label">Corruption Index (lower = worse)</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>What Happened:</h4>
+                    <ul>
+                        <li>Under Zuma (2009–2018), the Gupta family captured state entities</li>
+                        <li>Zondo Commission identified billions stolen from Eskom, SAA, Transnet</li>
+                        <li>State Capture cost SA's economy an estimated R1.5 trillion</li>
+                        <li>Few people have actually been jailed yet</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>Impact on You</h4><p>Money stolen from state entities is money that could have built schools, hospitals and created jobs. Corruption is the main reason SA's economy isn't growing fast enough.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-hospital"></i> National Health Insurance (NHI)</h3>
+                    <div class="urgency-badge medium">Upcoming</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">84%</span><span class="label">Use public healthcare</span></div>
+                    <div class="stat"><span class="number">R200bn+</span><span class="label">Estimated annual cost</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>What Is NHI:</h4>
+                    <ul>
+                        <li>Universal free healthcare funded by a new NHI tax</li>
+                        <li>Government as single payer for all healthcare</li>
+                        <li>Supporters: healthcare is a human right, not a commodity</li>
+                        <li>Critics: SA's government can't manage Eskom, how will it manage healthcare?</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>Impact on You</h4><p>If implemented well, NHI means every young South African gets the same quality healthcare regardless of income. The debate is about trust in government delivery.</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- History of Black Politics -->
+<section class="section" style="background:var(--white)">
+    <div class="container">
+        <div class="section-label">Black Political History</div>
+        <h2 class="section-title">The History of Black Politics in South Africa <span class="emoji">✊</span></h2>
+        <p class="section-sub">You can't understand where SA is today without understanding where it came from. This is your history.</p>
+        <div class="history-timeline">
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1912</div>
+                <div class="history-content">
+                    <h4>ANC Founded</h4>
+                    <p>The African National Congress is founded on January 8, 1912 — making it one of the oldest liberation movements in Africa. Initially non-violent, it sought to unite black South Africans against colonial oppression.</p>
+                    <button class="history-ask" onclick="askAITopic('Tell me about the founding of the ANC in 1912 and its early history')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1955</div>
+                <div class="history-content">
+                    <h4>Freedom Charter</h4>
+                    <p>The Congress of the People adopts the Freedom Charter at Kliptown, Soweto. "South Africa belongs to all who live in it." It becomes the ANC's foundational document — still referenced today.</p>
+                    <button class="history-ask" onclick="askAITopic('What is the Freedom Charter and why does it still matter today?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1960</div>
+                <div class="history-content">
+                    <h4>Sharpeville Massacre & ANC Banned</h4>
+                    <p>69 peaceful protesters killed by police at Sharpeville. The ANC and PAC are banned. Nelson Mandela and others form Umkhonto we Sizwe (MK) — the ANC's armed wing — and go underground.</p>
+                    <button class="history-ask" onclick="askAITopic('What was the Sharpeville Massacre and what did it mean for the anti-apartheid movement?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1969</div>
+                <div class="history-content">
+                    <h4>Steve Biko Founds Black Consciousness</h4>
+                    <p>Steve Biko founds the South African Students Organisation (SASO) and develops Black Consciousness ideology — the idea that black people must psychologically liberate themselves first.</p>
+                    <button class="history-ask" onclick="askAITopic('What is Black Consciousness and why did Steve Biko create it?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1976</div>
+                <div class="history-content">
+                    <h4>Soweto Uprising</h4>
+                    <p>Students rise up against Bantu Education and Afrikaans-medium instruction. Hector Pieterson (13) is shot dead. The uprising changes the world's view of apartheid and energizes the liberation movement.</p>
+                    <button class="history-ask" onclick="askAITopic('Tell me the full story of the 1976 Soweto Uprising')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1990</div>
+                <div class="history-content">
+                    <h4>Mandela Released, ANC Unbanned</h4>
+                    <p>On February 11, 1990, Nelson Mandela walks free after 27 years. The ANC is unbanned. Negotiations begin to end apartheid. The world watches.</p>
+                    <button class="history-ask" onclick="askAITopic('What happened when Mandela was released in 1990 and how did apartheid end?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">1994</div>
+                <div class="history-content">
+                    <h4>First Democratic Election</h4>
+                    <p>April 27, 1994. Every South African, regardless of race, votes for the first time. The ANC wins 62.7%. Mandela becomes president. Apartheid officially ends.</p>
+                    <button class="history-ask" onclick="askAITopic('Describe the historic 1994 South African elections and what changed')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2007–18</div>
+                <div class="history-content">
+                    <h4>State Capture Under Zuma</h4>
+                    <p>Jacob Zuma's presidency is marred by corruption. The Gupta family gains control of state entities. An estimated R1.5 trillion is looted. Eskom collapses. SA's credit rating is downgraded. The era is called "State Capture."</p>
+                    <button class="history-ask" onclick="askAITopic('What was State Capture under Jacob Zuma and what did it cost South Africa?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2024</div>
+                <div class="history-content">
+                    <h4>ANC Below 50% — GNU Formed</h4>
+                    <p>The ANC's 30-year dominance ends. Getting only 40.2%, it forms the Government of National Unity with the DA and other parties. A new chapter in SA democracy begins.</p>
+                    <button class="history-ask" onclick="askAITopic('What does the GNU mean for South Africa\'s democracy and future?')">Learn More <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Government Structure -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">How Government Works</div>
+        <h2 class="section-title">How SA's Government Is Structured</h2>
+        <div class="voting-info">
+            <div class="voting-card animate-on-scroll">
+                <h3><i class="fas fa-landmark"></i> National Government</h3>
+                <p style="font-size:0.88rem;color:var(--text-light);margin-bottom:1rem">President Cyril Ramaphosa leads a Cabinet of Ministers. Parliament has 400 seats in the National Assembly.</p>
+                <ul>
+                    <li>President: Cyril Ramaphosa (ANC)</li>
+                    <li>Deputy President: Paul Mashatile (ANC)</li>
+                    <li>Finance Minister: Enoch Godongwana</li>
+                    <li>Basic Education: Siviwe Gwarube (DA)</li>
+                    <li>Higher Education: Blade Nzimande (SACP)</li>
+                </ul>
+            </div>
+            <div class="voting-card animate-on-scroll">
+                <h3><i class="fas fa-map"></i> Provincial Government</h3>
+                <p style="font-size:0.88rem;color:var(--text-light);margin-bottom:1rem">9 provinces, each with a Premier and provincial legislature. They handle education, healthcare, and local economic development.</p>
+                <ul>
+                    <li>Gauteng: ANC (largest economy)</li>
+                    <li>Western Cape: DA (best-run province)</li>
+                    <li>KwaZulu-Natal: ANC/MK coalition tensions</li>
+                    <li>Eastern Cape: ANC (high unemployment)</li>
+                    <li>Limpopo, Mpumalanga, NW: ANC</li>
+                </ul>
+            </div>
+            <div class="voting-card animate-on-scroll">
+                <h3><i class="fas fa-vote-yea"></i> How to Vote & Register</h3>
+                <ol>
+                    <li>Be 18+ and a South African citizen</li>
+                    <li>Register at any IEC station with your ID</li>
+                    <li>Check status at elections.org.za</li>
+                    <li>Vote on election day at your voting station</li>
+                    <li>Each voter gets 2 ballots — national and provincial</li>
+                </ol>
+                <a href="https://www.elections.org.za/" target="_blank" class="btn-register"><i class="fas fa-vote-yea"></i> Register to Vote (IEC)</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resources -->
+<section class="section" style="background:var(--white)">
+    <div class="container">
+        <div class="section-label">Resources</div>
+        <h2 class="section-title">Stay Informed — Trusted Sources</h2>
+        <div class="resources-grid">
+            <div class="resource-card animate-on-scroll">
+                <h3>News & Analysis</h3>
+                <div class="media-links">
+                    <a href="https://www.dailymaverick.co.za/" target="_blank" class="media-btn article"><i class="fas fa-newspaper"></i> Daily Maverick</a>
+                    <a href="https://www.news24.com/news24/southafrica/politics" target="_blank" class="media-btn article"><i class="fas fa-newspaper"></i> News24 Politics</a>
+                    <a href="https://www.groundup.org.za/" target="_blank" class="media-btn article"><i class="fas fa-newspaper"></i> GroundUp (community news)</a>
+                </div>
+            </div>
+            <div class="resource-card animate-on-scroll">
+                <h3>Official Government</h3>
+                <div class="media-links">
+                    <a href="https://www.gov.za/" target="_blank" class="media-btn official"><i class="fas fa-university"></i> SA Government Portal</a>
+                    <a href="https://www.parliament.gov.za/" target="_blank" class="media-btn official"><i class="fas fa-landmark"></i> Parliament of SA</a>
+                    <a href="https://www.elections.org.za/" target="_blank" class="media-btn official"><i class="fas fa-vote-yea"></i> IEC Elections</a>
+                </div>
+            </div>
+            <div class="resource-card animate-on-scroll">
+                <h3>Watch & Learn</h3>
+                <div class="media-links">
+                    <a href="https://www.youtube.com/results?search_query=eNCA+south+africa" target="_blank" class="media-btn youtube"><i class="fab fa-youtube"></i> eNCA News</a>
+                    <a href="https://www.youtube.com/results?search_query=south+africa+politics+explained" target="_blank" class="media-btn youtube"><i class="fab fa-youtube"></i> SA Politics Explained</a>
+                    <a href="https://www.youtube.com/results?search_query=parliament+south+africa+debates" target="_blank" class="media-btn youtube"><i class="fab fa-youtube"></i> Parliament Debates</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">✊🏾 YouthPolitics</div>
+                <p>SA Politics explained for the black youth of South Africa.</p>
+                <p class="footer-updated"><i class="fas fa-clock"></i> Last updated: June 2026</p>
+            </div>
+            <div class="footer-links-col"><h5>Sections</h5><ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="sa-politics.html"><i class="fas fa-flag"></i> SA Politics</a></li>
+                <li><a href="world-politics.html"><i class="fas fa-globe"></i> World Politics</a></li>
+                <li><a href="economy.html"><i class="fas fa-chart-line"></i> Economy</a></li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="VukaYouth-PitchDocument.html"><i class="fas fa-file-alt"></i> About & Partnership</a></li>
+            </ul></div>
+            <div class="footer-links-col"><h5>Quick Learns</h5><ul>
+                <li><a href="#" onclick="askAITopic('What is the history of black politics in South Africa?')"><i class="fas fa-book"></i> Black Political History</a></li>
+                <li><a href="#" onclick="askAITopic('Tell me about Steve Biko and Black Consciousness')"><i class="fas fa-fist-raised"></i> Black Consciousness</a></li>
+                <li><a href="#" onclick="askAITopic('Explain the 2024 South African election results')"><i class="fas fa-vote-yea"></i> 2024 Election Results</a></li>
+            </ul></div>
+            <div class="footer-links-col"><h5>Data Sources</h5><ul>
+                <li><a href="https://www.parliament.gov.za" target="_blank">Parliament of SA</a></li>
+                <li><a href="https://www.elections.org.za" target="_blank">IEC</a></li>
+                <li><a href="https://www.gov.za" target="_blank">SA Government</a></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 YouthPolitics Platform. Not affiliated with any political party. For educational purposes.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="ai-chat-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-robot"></i> YouthPolitics AI — Ask Me About SA Politics</h3>
+            <button class="close-modal" id="closeModal" aria-label="Close">&times;</button>
+        </div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="chat-input-row">
+                <input type="text" id="chat-input" placeholder="Ask about parties, history, elections, political figures..." autocomplete="off">
+                <button id="send-btn" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="data-service.js"></script>
+<script src="script.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+    const bar = document.getElementById('scrollProgress');
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (bar) bar.style.width = pct + '%';
+});
+</script>
+</body>
+</html>

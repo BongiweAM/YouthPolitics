@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy & Finance — YouthPolitics | Financial Literacy for SA Youth</title>
+    <meta name="description" content="SA economy and financial literacy for black youth — how to save, invest, understand inflation, property investment, and build wealth. Updated June 2026.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">✊🏾</span>
+            <div class="logo-text">
+                <span class="logo-main">YouthPolitics</span>
+                <span class="logo-sub">Knowledge is Power · June 2026</span>
+            </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="sa-politics.html" class="nav-link"><i class="fas fa-flag"></i> SA Politics</a></li>
+            <li><a href="world-politics.html" class="nav-link"><i class="fas fa-globe"></i> World Politics</a></li>
+            <li><a href="economy.html" class="nav-link active"><i class="fas fa-chart-line"></i> Economy</a></li>
+            <li><a href="news.html" class="nav-link"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="VukaYouth-PitchDocument.html" class="nav-link"><i class="fas fa-file-alt"></i> About</a></li>
+            <li><button id="ai-chat-btn" class="ai-btn"><i class="fas fa-robot"></i> Ask AI</button></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="section-label" style="margin:0 auto 1rem;display:inline-flex">Updated June 2026</div>
+        <h1><i class="fas fa-chart-line"></i> Economy & Financial Literacy</h1>
+        <p>Understand how the economy works, how it affects you, and — most importantly — how you can benefit from it and build wealth starting today.</p>
+    </div>
+</section>
+
+<!-- Key Stats -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">SA Economic Snapshot — June 2026</div>
+        <h2 class="section-title">The Numbers That Define Your Reality</h2>
+        <div class="stats-grid-4">
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap red"><i class="fas fa-users"></i></div>
+                <div class="stat-big">59.7%</div>
+                <div class="stat-name">Youth Unemployment</div>
+                <div class="stat-detail">Q4 2024 — still the highest in the world</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap orange"><i class="fas fa-percentage"></i></div>
+                <div class="stat-big">5.3%</div>
+                <div class="stat-name">Inflation Rate</div>
+                <div class="stat-detail">June 2026 — prices rising slower</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap blue"><i class="fas fa-chart-line"></i></div>
+                <div class="stat-big">1.2%</div>
+                <div class="stat-name">GDP Growth</div>
+                <div class="stat-detail">Q1 2026 — slowly improving</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap green"><i class="fas fa-coins"></i></div>
+                <div class="stat-big">R18.20</div>
+                <div class="stat-name">USD/ZAR Rate</div>
+                <div class="stat-detail">June 2026 — rand strengthening</div>
+            </div>
+        </div>
+
+        <!-- Extended Stats -->
+        <div class="stats-grid-4" style="margin-top:1.5rem">
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap blue"><i class="fas fa-university"></i></div>
+                <div class="stat-big">8.00%</div>
+                <div class="stat-name">Prime Interest Rate</div>
+                <div class="stat-detail">SARB cut rates — June 2026</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap green"><i class="fas fa-graduation-cap"></i></div>
+                <div class="stat-big">R420bn</div>
+                <div class="stat-name">Education Budget</div>
+                <div class="stat-detail">Largest sector — 2026/27 budget</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap red"><i class="fas fa-balance-scale"></i></div>
+                <div class="stat-big">72.1%</div>
+                <div class="stat-name">Govt Debt (% GDP)</div>
+                <div class="stat-detail">Improving — down from 73.6% in 2024</div>
+            </div>
+            <div class="stat-card-new animate-on-scroll">
+                <div class="stat-icon-wrap orange"><i class="fas fa-home"></i></div>
+                <div class="stat-big">+4.8%</div>
+                <div class="stat-name">House Price Growth</div>
+                <div class="stat-detail">Property market recovering — June 2026</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Explain the Economy -->
+<section class="section" style="background:var(--white)">
+    <div class="container">
+        <div class="section-label">Economy Explained</div>
+        <h2 class="section-title">Understanding the Economy — No Jargon</h2>
+        <div class="issues-grid">
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-percentage"></i> What is Inflation?</h3>
+                    <div class="urgency-badge high">Know This</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">5.3%</span><span class="label">Current SA Rate (June 2026)</span></div>
+                    <div class="stat"><span class="number">7.8%</span><span class="label">Food Inflation</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Real-World Impact:</h4>
+                    <ul>
+                        <li>If bread cost R20 last year → it costs R21.06 now</li>
+                        <li>Transport costs up 6.9% in one year</li>
+                        <li>Your R100 in savings loses R5.30 of value per year</li>
+                        <li>Salary increases below 5.3% = you're getting poorer</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>What to Do</h4><p>Keep as little cash as possible idle. Put money in savings accounts, investments or assets that grow faster than inflation. Target investments returning 7%+ per year.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-university"></i> Interest Rates Explained</h3>
+                    <div class="urgency-badge high">Know This</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">8.00%</span><span class="label">Prime Rate (June 2026)</span></div>
+                    <div class="stat"><span class="number">SARB</span><span class="label">Sets the repo rate</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>How It Works:</h4>
+                    <ul>
+                        <li>SARB raises rates → borrowing gets more expensive → people spend less → inflation slows</li>
+                        <li>SARB cuts rates → borrowing gets cheaper → more spending → economy grows</li>
+                        <li>High rates hurt home loan affordability</li>
+                        <li>High rates are GOOD for people with savings accounts</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>What to Do</h4><p>When rates are high: pay off debt fast, delay taking big loans. When rates fall: good time to buy property. Track SARB announcements (they happen every 2 months).</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-chart-line"></i> What is GDP?</h3>
+                    <div class="urgency-badge medium">Understand This</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">1.2%</span><span class="label">SA Q1 2026 Growth</span></div>
+                    <div class="stat"><span class="number">R8.1T</span><span class="label">SA's GDP (2026)</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Why It Matters:</h4>
+                    <ul>
+                        <li>GDP = total value of everything SA produces in a year</li>
+                        <li>1.2% growth is better but not enough to reduce unemployment</li>
+                        <li>SA needs 4%+ growth to create enough jobs for 800K new workers per year</li>
+                        <li>Load shedding improvements helping economy grow faster</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>What to Do</h4><p>Understand which sectors are growing (tech, green energy, services) and align your career or business with those sectors. Don't fight the economic current — swim with it.</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Charts -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">Data & Charts</div>
+        <h2 class="section-title">SA Economic Trends 2024–2026</h2>
+        <div class="charts-grid">
+            <div class="chart-box">
+                <h3>Youth Unemployment Trend (%)</h3>
+                <canvas id="unemploymentChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Inflation vs Interest Rate (%)</h3>
+                <canvas id="inflationChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>GDP Growth Projection 2024–2026 (%)</h3>
+                <canvas id="gdpChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Government Budget Allocation 2024/25</h3>
+                <canvas id="budgetChart"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Financial Literacy -->
+<section class="section" style="background:var(--white)">
+    <div class="container">
+        <div class="section-label">Financial Literacy</div>
+        <h2 class="section-title">Build Your Financial Future <span class="emoji">💰</span></h2>
+        <p class="section-sub">Schools don't teach you this. But this knowledge is the difference between struggling and thriving.</p>
+        <div class="finance-grid">
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">01</div>
+                <h3><i class="fas fa-piggy-bank"></i> Start a Budget</h3>
+                <p>The 50/30/20 rule: <strong>50%</strong> on needs (rent, food, transport), <strong>30%</strong> on wants, <strong>20%</strong> on savings and investments. Even with a small income, this framework transforms your financial life.</p>
+                <button class="finance-ask" onclick="askAITopic('How do I create a budget as a young South African with a small income?')">Ask AI <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">02</div>
+                <h3><i class="fas fa-shield-alt"></i> Emergency Fund First</h3>
+                <p>Before investing, save <strong>3 months of expenses</strong> in a money market account. This protects you when unexpected things happen — no need to borrow at high interest rates.</p>
+                <button class="finance-ask" onclick="askAITopic('What is an emergency fund and how do I build one in South Africa?')">Ask AI <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">03</div>
+                <h3><i class="fas fa-chart-pie"></i> Invest in ETFs</h3>
+                <p>An ETF (Exchange Traded Fund) lets you own a small piece of many companies at once. The <strong>Satrix 40 ETF</strong> on EasyEquities tracks SA's top 40 companies. Start with R1. Your money grows as SA grows.</p>
+                <button class="finance-ask" onclick="askAITopic('How do I buy ETFs in South Africa and which ones should I consider?')">Ask AI <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">04</div>
+                <h3><i class="fas fa-percentage"></i> Tax-Free Savings</h3>
+                <p>Open a <strong>Tax-Free Savings Account (TFSA)</strong>. You can invest up to <strong>R36,000 per year</strong> (R500,000 lifetime) with ZERO tax on returns. This is one of the best financial tools available to any South African.</p>
+                <button class="finance-ask" onclick="askAITopic('How does a Tax-Free Savings Account work in South Africa?')">Ask AI <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">05</div>
+                <h3><i class="fas fa-home"></i> Property Investment</h3>
+                <p>You can get a <strong>100% home loan</strong> (no deposit) with good credit. Rental income covers the bond. Property value grows with inflation. Your tenant builds your wealth. This is how generational wealth is created.</p>
+                <button class="finance-ask" onclick="askAITopic('How can a young black South African buy property with no money down?')">Ask AI <i class="fas fa-robot"></i></button>
+            </div>
+
+            <div class="finance-card animate-on-scroll">
+                <div class="finance-num">06</div>
+                <h3><i class="fas fa-laptop"></i> Build a Side Income</h3>
+                <p>Coding, design, writing, tutoring, driving, photography — any skill becomes money. <strong>R2,000/month</strong> from a side hustle, invested in ETFs for 20 years at 10% return, becomes <strong>R1.5 million</strong>.</p>
+                <button class="finance-ask" onclick="askAITopic('What are the best side hustles for young South Africans in 2026?')">Ask AI <i class="fas fa-robot"></i></button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Power of Compound Interest -->
+<section class="section" style="background:linear-gradient(135deg,var(--dark2),#0d2b1d)">
+    <div class="container">
+        <div class="section-label" style="background:rgba(29,185,84,0.15);color:var(--green)">The Biggest Secret</div>
+        <h2 class="section-title" style="color:#fff">The Power of Starting Early <span class="emoji">⏰</span></h2>
+        <p style="color:rgba(255,255,255,0.7);font-size:1.05rem;max-width:680px;margin-bottom:2.5rem">If you invest R500 per month from age 20 at 10% annual return, here's what you get:</p>
+
+        <div class="stats-grid-4">
+            <div class="stat-card-new" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1)">
+                <div class="stat-icon-wrap green"><i class="fas fa-calendar"></i></div>
+                <div class="stat-big" style="color:#fff">R60K</div>
+                <div class="stat-name" style="color:rgba(255,255,255,0.8)">After 10 years</div>
+                <div class="stat-detail" style="color:rgba(255,255,255,0.5)">You invested R60K total</div>
+            </div>
+            <div class="stat-card-new" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1)">
+                <div class="stat-icon-wrap green"><i class="fas fa-calendar"></i></div>
+                <div class="stat-big" style="color:#fff">R190K</div>
+                <div class="stat-name" style="color:rgba(255,255,255,0.8)">After 15 years</div>
+                <div class="stat-detail" style="color:rgba(255,255,255,0.5)">You invested R90K total</div>
+            </div>
+            <div class="stat-card-new" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1)">
+                <div class="stat-icon-wrap green"><i class="fas fa-calendar"></i></div>
+                <div class="stat-big" style="color:var(--green)">R380K</div>
+                <div class="stat-name" style="color:rgba(255,255,255,0.8)">After 20 years</div>
+                <div class="stat-detail" style="color:rgba(255,255,255,0.5)">You invested R120K total</div>
+            </div>
+            <div class="stat-card-new" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1)">
+                <div class="stat-icon-wrap green"><i class="fas fa-chart-line"></i></div>
+                <div class="stat-big" style="color:var(--gold)">R1.9M</div>
+                <div class="stat-name" style="color:rgba(255,255,255,0.8)">After 35 years (age 55)</div>
+                <div class="stat-detail" style="color:rgba(255,255,255,0.5)">You invested R210K total</div>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem">
+            <button class="btn-primary-hero" onclick="askAITopic('Explain compound interest and how to use it to build wealth in South Africa')"><i class="fas fa-robot"></i> Explain Compound Interest to Me</button>
+        </div>
+    </div>
+</section>
+
+<!-- Economic Policies -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">Policy Impact</div>
+        <h2 class="section-title">Economic Policies That Affect You</h2>
+        <div class="issues-grid">
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-briefcase"></i> YES Program</h3>
+                    <div class="urgency-badge high">Available Now</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">R21bn</span><span class="label">Government investment</span></div>
+                    <div class="stat"><span class="number">1M</span><span class="label">Jobs target over 3 years</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>How YES Works:</h4>
+                    <ul>
+                        <li>Companies get tax incentives to hire youth aged 18–35</li>
+                        <li>12-month paid employment with skills training</li>
+                        <li>Focus on digital economy and green jobs</li>
+                        <li>Available in all provinces — apply through your local Labour Centre</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>How to Access It</h4><p>Register on yes4youth.co.za or visit your nearest Department of Labour office. This is one of the best youth employment opportunities in SA right now.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-leaf"></i> Green Economy Jobs</h3>
+                    <div class="urgency-badge high">Future is Green</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">200K+</span><span class="label">Green jobs by 2026</span></div>
+                    <div class="stat"><span class="number">$8.5bn</span><span class="label">Just Energy Transition fund</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>Green Careers to Consider:</h4>
+                    <ul>
+                        <li>Solar PV installer — high demand, R15K–R40K/month</li>
+                        <li>Wind turbine technician — specialized, well-paid</li>
+                        <li>Green hydrogen engineer — brand new field</li>
+                        <li>Environmental consultant and compliance officer</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>How to Prepare</h4><p>Study through TVET colleges for renewable energy courses. They are free or subsidized. The green economy is where the money will be in the next 20 years — position yourself now.</p></div>
+            </div>
+
+            <div class="issue-card animate-on-scroll">
+                <div class="issue-header">
+                    <h3><i class="fas fa-laptop-code"></i> Digital Skills Initiative</h3>
+                    <div class="urgency-badge high">R5bn Investment</div>
+                </div>
+                <div class="issue-stats">
+                    <div class="stat"><span class="number">R5bn</span><span class="label">Government allocation</span></div>
+                    <div class="stat"><span class="number">500K</span><span class="label">Youth to be trained</span></div>
+                </div>
+                <div class="political-responses">
+                    <h4>What's Available:</h4>
+                    <ul>
+                        <li>Free coding bootcamps via WeThinkCode and Capaciti</li>
+                        <li>Google, Microsoft, and AWS free digital certifications</li>
+                        <li>Government e-Skills Institute — free online courses</li>
+                        <li>SETA-funded digital marketing and UX design courses</li>
+                    </ul>
+                </div>
+                <div class="impact-on-you"><h4>How to Access</h4><p>Go to eskills.ac.za, WeThinkCode.co.za, or Capaciti.io. Most are FREE or heavily subsidized. A coding certification can get you a job earning R25K–R80K/month within a year.</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">✊🏾 YouthPolitics</div>
+                <p>Financial literacy and economic education for the black youth of South Africa.</p>
+                <p class="footer-updated"><i class="fas fa-clock"></i> Last updated: June 2026</p>
+            </div>
+            <div class="footer-links-col"><h5>Sections</h5><ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="sa-politics.html"><i class="fas fa-flag"></i> SA Politics</a></li>
+                <li><a href="world-politics.html"><i class="fas fa-globe"></i> World Politics</a></li>
+                <li><a href="economy.html"><i class="fas fa-chart-line"></i> Economy</a></li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="VukaYouth-PitchDocument.html"><i class="fas fa-file-alt"></i> About & Partnership</a></li>
+            </ul></div>
+            <div class="footer-links-col"><h5>Learn About</h5><ul>
+                <li><a href="#" onclick="askAITopic('How do I invest in South Africa with R100?')"><i class="fas fa-chart-pie"></i> Investing</a></li>
+                <li><a href="#" onclick="askAITopic('How does property investment work in South Africa?')"><i class="fas fa-home"></i> Property</a></li>
+                <li><a href="#" onclick="askAITopic('How do I apply for NSFAS?')"><i class="fas fa-graduation-cap"></i> NSFAS</a></li>
+            </ul></div>
+            <div class="footer-links-col"><h5>Data Sources</h5><ul>
+                <li><a href="https://www.statssa.gov.za" target="_blank">Stats SA</a></li>
+                <li><a href="https://www.resbank.co.za" target="_blank">SA Reserve Bank</a></li>
+                <li><a href="https://www.treasury.gov.za" target="_blank">National Treasury</a></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 YouthPolitics Platform. Data sourced from Stats SA, SARB, and National Treasury.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="ai-chat-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-robot"></i> YouthPolitics AI — Economy & Finance</h3>
+            <button class="close-modal" id="closeModal" aria-label="Close">&times;</button>
+        </div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="chat-input-row">
+                <input type="text" id="chat-input" placeholder="Ask about economy, investing, saving, or how to earn more..." autocomplete="off">
+                <button id="send-btn" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="data-service.js"></script>
+<script src="script.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+    const bar = document.getElementById('scrollProgress');
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (bar) bar.style.width = pct + '%';
+});
+const observer = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) x.target.classList.add('visible'); }), { threshold: 0.1 });
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+// Charts
+document.addEventListener('DOMContentLoaded', function() {
+    const chartDefaults = { responsive: true, plugins: { legend: { display: true, position:'bottom' } } };
+
+    new Chart(document.getElementById('unemploymentChart'), {
+        type: 'line',
+        data: {
+            labels: ['2019','2020','2021','2022','2023','2024','2025 proj','2026 proj'],
+            datasets: [{ label:'Youth Unemployment %', data:[55.2,63.3,66.5,63.9,61.4,59.7,52.5,45.0], borderColor:'#e63946', backgroundColor:'rgba(230,57,70,0.08)', tension:0.4, fill:true, pointRadius:4 }]
+        },
+        options: { ...chartDefaults, scales:{ y:{ min:40, max:70 } } }
+    });
+
+    new Chart(document.getElementById('inflationChart'), {
+        type: 'line',
+        data: {
+            labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+            datasets: [
+                { label:'Inflation %', data:[5.3,5.6,5.9,5.9,5.2,4.6,4.6,4.4,3.8,3.9,5.9,5.9], borderColor:'#1976d2', backgroundColor:'rgba(25,118,210,0.06)', tension:0.4 },
+                { label:'Interest Rate %', data:[8.25,8.25,8.25,8.25,8.25,8.25,8.25,8.25,8.25,8.25,8.25,8.25], borderColor:'#f5a623', backgroundColor:'rgba(245,166,35,0.06)', tension:0.1 }
+            ]
+        },
+        options: { ...chartDefaults, scales:{ y:{ min:3, max:10 } } }
+    });
+
+    new Chart(document.getElementById('gdpChart'), {
+        type: 'bar',
+        data: {
+            labels: ['2024','2025 proj','2026 proj'],
+            datasets: [{ label:'GDP Growth %', data:[0.6,1.8,2.5], backgroundColor:['rgba(230,57,70,0.7)','rgba(245,166,35,0.7)','rgba(29,185,84,0.7)'], borderRadius:8 }]
+        },
+        options: { ...chartDefaults, scales:{ y:{ min:0, max:3 } } }
+    });
+
+    new Chart(document.getElementById('budgetChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Education (20.1%)','Social Grants (15.8%)','Health (13.2%)','Infrastructure (8.9%)','Defence (3.4%)','Other (38.6%)'],
+            datasets: [{ data:[20.1,15.8,13.2,8.9,3.4,38.6], backgroundColor:['#1976d2','#1db954','#e63946','#f5a623','#7c3aed','#95a5a6'] }]
+        },
+        options: { ...chartDefaults, cutout:'55%' }
+    });
+});
+</script>
+</body>
+</html>

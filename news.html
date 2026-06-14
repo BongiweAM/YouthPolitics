@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News — YouthPolitics | SA & World News Explained Simply</title>
+    <meta name="description" content="South African and world news explained simply for the black youth — break down complex news stories, ask AI to explain anything. Updated June 2026.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">✊🏾</span>
+            <div class="logo-text">
+                <span class="logo-main">YouthPolitics</span>
+                <span class="logo-sub">Knowledge is Power · June 2026</span>
+            </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="sa-politics.html" class="nav-link"><i class="fas fa-flag"></i> SA Politics</a></li>
+            <li><a href="world-politics.html" class="nav-link"><i class="fas fa-globe"></i> World Politics</a></li>
+            <li><a href="economy.html" class="nav-link"><i class="fas fa-chart-line"></i> Economy</a></li>
+            <li><a href="news.html" class="nav-link active"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="VukaYouth-PitchDocument.html" class="nav-link"><i class="fas fa-file-alt"></i> About</a></li>
+            <li><button id="ai-chat-btn" class="ai-btn"><i class="fas fa-robot"></i> Ask AI</button></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="section-label" style="margin:0 auto 1rem;display:inline-flex">June 2026</div>
+        <h1><i class="fas fa-newspaper"></i> News Explained Simply</h1>
+        <p>Real news, broken down for the black youth. We explain the who, what, why, and how it affects you. Ask the AI to explain any story in plain language.</p>
+    </div>
+</section>
+
+<!-- AI News Helper Banner -->
+<section class="section" style="background:linear-gradient(135deg,var(--dark2),#0d2b1d);padding:2.5rem 0">
+    <div class="container">
+        <div class="ai-highlight-box" style="gap:2rem;align-items:center">
+            <div>
+                <h3 style="color:#fff;font-size:1.3rem;font-weight:800;margin-bottom:0.5rem"><i class="fas fa-robot" style="color:var(--green)"></i> Confused by a News Story?</h3>
+                <p style="color:rgba(255,255,255,0.7);font-size:0.92rem">Paste any headline or ask any question. Our AI breaks it down in simple language — no political bias, just facts and context.</p>
+            </div>
+            <div style="display:flex;gap:0.8rem;flex-wrap:wrap">
+                <button class="ai-suggest-btn" onclick="askAITopic('Explain the ANC GNU coalition deal and what it means for South Africa')">ANC GNU Deal</button>
+                <button class="ai-suggest-btn" onclick="askAITopic('What is happening with Eskom and load shedding in 2026?')">Eskom 2026</button>
+                <button class="ai-suggest-btn" onclick="askAITopic('What is the NHI bill and how will it affect South Africans?')">NHI Bill</button>
+                <button class="btn-primary-hero" onclick="document.getElementById('ai-chat-btn').click()" style="padding:0.7rem 1.4rem;font-size:0.9rem"><i class="fas fa-comments"></i> Ask Anything</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Top Stories -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">Top Stories</div>
+        <h2 class="section-title">What's Happening — June 2026</h2>
+        <div class="news-grid">
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb">📊</div>
+                <div class="news-body">
+                    <span class="news-cat cat-economy">Economy</span>
+                    <h3>SA Youth Unemployment Still at 59.7% — What's Being Done?</h3>
+                    <p>Despite the YES program and digital economy growth, youth unemployment remains catastrophically high. New data from Stats SA breaks down which provinces and age groups are worst affected.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> June 2026</span>
+                        <button class="news-ask-btn" onclick="askAITopic('Why is youth unemployment still so high in South Africa and what is being done about it?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb">🤝</div>
+                <div class="news-body">
+                    <span class="news-cat cat-politics">SA Politics</span>
+                    <h3>GNU Coalition: Two Years In — Is It Working?</h3>
+                    <p>The Government of National Unity formed after the 2024 elections is now two years old. An analysis of what the ANC-DA coalition has achieved, where tensions remain, and what it means for SA's future.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> June 2026</span>
+                        <button class="news-ask-btn" onclick="askAITopic('How is the GNU Government of National Unity performing two years after the 2024 elections?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb">⚡</div>
+                <div class="news-body">
+                    <span class="news-cat cat-economy">Energy</span>
+                    <h3>Load Shedding Significantly Reduced — Green Energy Working</h3>
+                    <p>New solar and wind capacity has dramatically cut load shedding hours. Independent Power Producers are online. SA's energy crisis is easing — but the work is not done.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> June 2026</span>
+                        <button class="news-ask-btn" onclick="askAITopic('Why is load shedding getting better in South Africa and what is the role of renewable energy?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb">🏛️</div>
+                <div class="news-body">
+                    <span class="news-cat cat-politics">SA Politics</span>
+                    <h3>NHI Bill: What National Health Insurance Actually Means for You</h3>
+                    <p>The National Health Insurance Act has been signed into law. Here's a plain-language breakdown of what it actually does, who benefits, who pays, and when it will take effect.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> June 2026</span>
+                        <button class="news-ask-btn" onclick="askAITopic('Explain the NHI National Health Insurance in simple terms — how will it work and who benefits?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb">🌍</div>
+                <div class="news-body">
+                    <span class="news-cat cat-world">World</span>
+                    <h3>SA vs Israel at ICJ: Where Does the Case Stand?</h3>
+                    <p>South Africa's historic genocide case against Israel continues at the International Court of Justice. What has been ordered, what SA is asking for, and how it positions SA globally.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> June 2026</span>
+                        <button class="news-ask-btn" onclick="askAITopic('What is South Africa\'s ICJ genocide case against Israel and what has happened so far?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb">💰</div>
+                <div class="news-body">
+                    <span class="news-cat cat-economy">Finance</span>
+                    <h3>Budget 2026: What It Means for Young South Africans</h3>
+                    <p>The 2026/27 national budget has been tabled. Education, social grants, YES program — here's what the government is spending on youth and what it means for you in practical terms.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> June 2026</span>
+                        <button class="news-ask-btn" onclick="askAITopic('What does the 2026 South African budget mean for young people and students?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Historical Context Stories -->
+<section class="section" style="background:var(--white)">
+    <div class="container">
+        <div class="section-label">Background & Context</div>
+        <h2 class="section-title">Understanding Today by Knowing the Past</h2>
+        <p class="section-sub">Every news story has a history. Here's the context you need to understand what's happening today.</p>
+        <div class="news-grid">
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb" style="font-size:2.5rem">✊</div>
+                <div class="news-body">
+                    <span class="news-cat cat-politics">History</span>
+                    <h3>Why the ANC Lost Its Majority — 30 Years of Declining Trust</h3>
+                    <p>From 62.7% in 1994 to 40.2% in 2024. The story of how the ANC went from liberation hero to losing its majority — corruption, unemployment, and generational shifts explained.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> Background</span>
+                        <button class="news-ask-btn" onclick="askAITopic('Why did the ANC lose its majority in 2024 after 30 years of governing South Africa?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb" style="font-size:2.5rem">🏭</div>
+                <div class="news-body">
+                    <span class="news-cat cat-economy">History</span>
+                    <h3>How State Capture Broke SA's Economy</h3>
+                    <p>The Zondo Commission found that R1.5 trillion was stolen or misused during the Zuma era. Here's how the Gupta family captured the state and why you're still paying for it today.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> Background</span>
+                        <button class="news-ask-btn" onclick="askAITopic('What was State Capture in South Africa and how did it damage the economy?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card-new animate-on-scroll">
+                <div class="news-thumb" style="font-size:2.5rem">📚</div>
+                <div class="news-body">
+                    <span class="news-cat cat-education">Education</span>
+                    <h3>Bantu Education: Why SA's Schools Are Still Unequal</h3>
+                    <p>The Bantu Education Act (1953) deliberately created an inferior school system for black children. Its legacy explains why SA's educational inequality persists 30 years after apartheid ended.</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> Background</span>
+                        <button class="news-ask-btn" onclick="askAITopic('What was Bantu Education and why does it still affect South African schools today?')"><i class="fas fa-robot"></i> Explain</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- News Sources -->
+<section class="section">
+    <div class="container">
+        <div class="section-label">Where to Get Your News</div>
+        <h2 class="section-title">Trusted News Sources</h2>
+        <p class="section-sub">Not all news sources are equal. Here are reliable, well-respected South African and international sources.</p>
+        <div class="resources-grid">
+            <div class="resource-card animate-on-scroll">
+                <h3>🇿🇦 South African News</h3>
+                <div class="media-links">
+                    <a href="https://www.dailymaverick.co.za/" target="_blank" class="media-btn article"><i class="fas fa-star"></i> Daily Maverick (Best investigation)</a>
+                    <a href="https://www.news24.com/" target="_blank" class="media-btn article"><i class="fas fa-newspaper"></i> News24 (Breaking news)</a>
+                    <a href="https://www.groundup.org.za/" target="_blank" class="media-btn article"><i class="fas fa-users"></i> GroundUp (Community focus)</a>
+                    <a href="https://www.timeslive.co.za/" target="_blank" class="media-btn article"><i class="fas fa-newspaper"></i> TimesLive</a>
+                </div>
+            </div>
+            <div class="resource-card animate-on-scroll">
+                <h3>🌍 World News</h3>
+                <div class="media-links">
+                    <a href="https://www.bbc.com/news/world/africa" target="_blank" class="media-btn official"><i class="fas fa-globe"></i> BBC Africa</a>
+                    <a href="https://www.aljazeera.com/" target="_blank" class="media-btn official"><i class="fas fa-satellite-dish"></i> Al Jazeera (Global South view)</a>
+                    <a href="https://theconversation.com/africa" target="_blank" class="media-btn article"><i class="fas fa-graduation-cap"></i> The Conversation Africa</a>
+                </div>
+            </div>
+            <div class="resource-card animate-on-scroll">
+                <h3>📺 Watch & Listen</h3>
+                <div class="media-links">
+                    <a href="https://www.youtube.com/@eNCAnews" target="_blank" class="media-btn youtube"><i class="fab fa-youtube"></i> eNCA (SA TV news)</a>
+                    <a href="https://www.youtube.com/results?search_query=SABC+news" target="_blank" class="media-btn youtube"><i class="fab fa-youtube"></i> SABC News</a>
+                    <a href="https://www.youtube.com/results?search_query=PowerFM+south+africa+politics" target="_blank" class="media-btn youtube"><i class="fas fa-microphone"></i> Power FM Politics</a>
+                </div>
+            </div>
+            <div class="resource-card animate-on-scroll">
+                <h3>⚠️ Spotting Fake News</h3>
+                <div class="media-links" style="flex-direction:column;gap:0.5rem">
+                    <p style="font-size:0.82rem;color:var(--text-light)">Before sharing a story:</p>
+                    <p style="font-size:0.82rem;color:var(--text-light)">✅ Check who published it — is it a known outlet?</p>
+                    <p style="font-size:0.82rem;color:var(--text-light)">✅ Check if other major outlets also report it</p>
+                    <p style="font-size:0.82rem;color:var(--text-light)">✅ Check AfricaCheck.org for SA fact-checking</p>
+                    <a href="https://africacheck.org/" target="_blank" class="media-btn official"><i class="fas fa-check-circle"></i> AfricaCheck.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline -->
+<section class="section" style="background:var(--white)" id="timeline">
+    <div class="container">
+        <div class="section-label">Timeline</div>
+        <h2 class="section-title">Key Events 2024–2026 <span class="emoji">📅</span></h2>
+        <div class="history-timeline">
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">May 2024</div>
+                <div class="history-content">
+                    <h4>National Elections — ANC Below 50%</h4>
+                    <p>South Africa's most significant election since 1994. ANC gets 40.2%, forms Government of National Unity with 6 other parties. DA's Steenhuisen joins Cabinet for the first time.</p>
+                    <button class="history-ask" onclick="askAITopic('What happened in the May 2024 South African national elections?')">Ask AI <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">Jan 2024</div>
+                <div class="history-content">
+                    <h4>SA Takes Israel to ICJ for Genocide</h4>
+                    <p>SA files a case at the International Court of Justice alleging Israel is committing genocide in Gaza. ICJ issues provisional measures ordering Israel to prevent genocidal acts. SA gains global attention.</p>
+                    <button class="history-ask" onclick="askAITopic('What is South Africa\'s ICJ case against Israel and what has it achieved?')">Ask AI <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2023</div>
+                <div class="history-content">
+                    <h4>Worst Load Shedding Year in SA History</h4>
+                    <p>South Africa experienced over 200 days of load shedding in 2023, with stage 6 blackouts becoming routine. Estimated R400bn economic damage. Eskom CEO fired. Energy crisis reaches breaking point.</p>
+                    <button class="history-ask" onclick="askAITopic('What caused the 2023 load shedding crisis in South Africa and who is responsible?')">Ask AI <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2022</div>
+                <div class="history-content">
+                    <h4>Zondo Commission Final Report</h4>
+                    <p>The Zondo Commission releases its final report on State Capture. Names hundreds of individuals involved in looting the state. Recommends prosecutions. Most implicated individuals still face no criminal charges by 2026.</p>
+                    <button class="history-ask" onclick="askAITopic('What did the Zondo Commission find and why has nobody been jailed for State Capture?')">Ask AI <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+            <div class="history-item animate-on-scroll">
+                <div class="history-year">2015</div>
+                <div class="history-content">
+                    <h4>#FeesMustFall Movement</h4>
+                    <p>University students across SA shut down campuses demanding free education. The movement leads to zero percent fee increases for 2016 and eventually expanded NSFAS funding. A defining moment in post-1994 youth politics.</p>
+                    <button class="history-ask" onclick="askAITopic('What was #FeesMustFall and what did it achieve for South African students?')">Ask AI <i class="fas fa-robot"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">✊🏾 YouthPolitics</div>
+                <p>News explained for the black youth of South Africa. No spin. Just context.</p>
+                <p class="footer-updated"><i class="fas fa-clock"></i> Last updated: June 2026</p>
+            </div>
+            <div class="footer-links-col"><h5>Sections</h5><ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="sa-politics.html"><i class="fas fa-flag"></i> SA Politics</a></li>
+                <li><a href="world-politics.html"><i class="fas fa-globe"></i> World Politics</a></li>
+                <li><a href="economy.html"><i class="fas fa-chart-line"></i> Economy</a></li>
+                <li><a href="VukaYouth-PitchDocument.html"><i class="fas fa-file-alt"></i> About & Partnership</a></li>
+            </ul></div>
+            <div class="footer-links-col"><h5>Fact Check</h5><ul>
+                <li><a href="https://africacheck.org/" target="_blank"><i class="fas fa-check-circle"></i> AfricaCheck.org</a></li>
+                <li><a href="https://www.dailymaverick.co.za/" target="_blank"><i class="fas fa-newspaper"></i> Daily Maverick</a></li>
+                <li><a href="https://groundup.org.za/" target="_blank"><i class="fas fa-users"></i> GroundUp</a></li>
+            </ul></div>
+            <div class="footer-links-col"><h5>Ask the AI</h5><ul>
+                <li><a href="#" onclick="askAITopic('What is happening in South Africa politically in 2026?')"><i class="fas fa-question"></i> SA in 2026</a></li>
+                <li><a href="#" onclick="askAITopic('Explain the NHI bill in simple terms')"><i class="fas fa-question"></i> NHI Explained</a></li>
+                <li><a href="#" onclick="askAITopic('What is the GNU and is it working?')"><i class="fas fa-question"></i> GNU Status</a></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 YouthPolitics Platform. For educational purposes. Not affiliated with any political party.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="ai-chat-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-robot"></i> YouthPolitics AI — News Explained</h3>
+            <button class="close-modal" id="closeModal" aria-label="Close">&times;</button>
+        </div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="chat-input-row">
+                <input type="text" id="chat-input" placeholder="Paste a headline or ask me to explain any news story..." autocomplete="off">
+                <button id="send-btn" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="data-service.js"></script>
+<script src="script.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+    const bar = document.getElementById('scrollProgress');
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (bar) bar.style.width = pct + '%';
+});
+const observer = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) x.target.classList.add('visible'); }), { threshold: 0.1 });
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

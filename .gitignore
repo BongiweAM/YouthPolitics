@@ -1,0 +1,19 @@
+# YouthPolitics - Files to ignore when deploying
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*~
+
+# Logs
+*.log
+
+# Don't upload pitch document (it's separate)
+VukaYouth-PitchDocument.html

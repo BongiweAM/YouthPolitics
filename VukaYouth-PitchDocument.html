@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthPolitics — Research & Partnership Pitch Document 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; color:#1a1a1a; background:#fff; font-size:14px; line-height:1.7; }
+        .page { max-width:800px; margin:0 auto; padding:60px 50px; }
+        h1 { font-size:2.8rem; font-weight:900; color:#14833b; margin-bottom:0.3rem; }
+        h2 { font-size:1.6rem; font-weight:800; margin-bottom:0.5rem; margin-top:2.5rem; color:#1a1a1a; border-bottom:3px solid #1db954; padding-bottom:0.4rem; display:inline-block; }
+        h3 { font-size:1.1rem; font-weight:700; margin-bottom:0.4rem; color:#14833b; }
+        p { color:#444; margin-bottom:0.8rem; font-size:0.95rem; }
+        ul { padding-left:1.2rem; margin-bottom:1rem; }
+        li { margin-bottom:0.4rem; color:#444; font-size:0.95rem; }
+        .hero-sub { font-size:1rem; color:#555; margin-bottom:2rem; }
+        .cover-block {
+            background:linear-gradient(135deg,#1a1a2e,#14833b);
+            color:#fff; padding:50px; margin-bottom:40px; border-radius:16px;
+        }
+        .cover-block h1 { color:#fff; }
+        .cover-block p { color:rgba(255,255,255,0.8); }
+        .cover-block .badge { display:inline-block; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3); color:#fff; padding:4px 14px; border-radius:20px; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:1rem; }
+        .stat-row { display:flex; gap:2rem; flex-wrap:wrap; margin:1.5rem 0; }
+        .stat-box { background:#f0faf4; border:1px solid #c3e6cb; border-radius:12px; padding:1.2rem 1.5rem; flex:1; min-width:150px; text-align:center; }
+        .stat-box .num { font-size:2rem; font-weight:900; color:#14833b; }
+        .stat-box .lbl { font-size:0.78rem; color:#555; text-transform:uppercase; letter-spacing:0.05em; }
+        .section-block { margin:2rem 0; }
+        .card { background:#f8f9fc; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-bottom:1rem; }
+        .card-red { border-left:4px solid #e63946; }
+        .card-green { border-left:4px solid #1db954; }
+        .card-blue { border-left:4px solid #1976d2; }
+        .card-orange { border-left:4px solid #f5a623; }
+        .card-purple { border-left:4px solid #7c3aed; }
+        .highlight-box { background:linear-gradient(135deg,#f0faf4,#e8f5e9); border:2px solid #1db954; border-radius:12px; padding:1.5rem; margin:1.5rem 0; }
+        .two-col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+        .tag { display:inline-block; background:rgba(29,185,84,0.1); color:#14833b; border:1px solid rgba(29,185,84,0.3); padding:3px 10px; border-radius:20px; font-size:0.72rem; font-weight:700; margin:2px; }
+        .tag-blue { background:rgba(25,118,210,0.1); color:#1565c0; border-color:rgba(25,118,210,0.3); }
+        .tag-red { background:rgba(230,57,70,0.1); color:#c1121f; border-color:rgba(230,57,70,0.3); }
+        .tag-purple { background:rgba(124,58,237,0.1); color:#6d28d9; border-color:rgba(124,58,237,0.3); }
+        table { width:100%; border-collapse:collapse; margin:1rem 0; }
+        th { background:#1a1a2e; color:#fff; padding:10px 14px; text-align:left; font-size:0.85rem; }
+        td { padding:10px 14px; border-bottom:1px solid #e2e8f0; font-size:0.88rem; color:#444; }
+        tr:hover td { background:#f8f9fc; }
+        .footer-doc { margin-top:3rem; padding-top:2rem; border-top:2px solid #e2e8f0; text-align:center; color:#777; font-size:0.82rem; }
+        .print-btn { background:#1db954; color:#fff; border:none; padding:12px 28px; border-radius:30px; font-size:1rem; font-weight:700; cursor:pointer; display:block; margin:20px auto; transition:all 0.3s; }
+        .print-btn:hover { background:#14833b; }
+        @media print {
+            .print-btn { display:none; }
+            body { font-size:12px; }
+            .page { padding:30px; }
+        }
+        @page { margin: 2cm; }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">✊🏾</span>
+            <div class="logo-text">
+                <span class="logo-main">YouthPolitics</span>
+                <span class="logo-sub">Knowledge is Power · June 2026</span>
+            </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="sa-politics.html" class="nav-link"><i class="fas fa-flag"></i> SA Politics</a></li>
+            <li><a href="world-politics.html" class="nav-link"><i class="fas fa-globe"></i> World Politics</a></li>
+            <li><a href="economy.html" class="nav-link"><i class="fas fa-chart-line"></i> Economy</a></li>
+            <li><a href="news.html" class="nav-link"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="VukaYouth-PitchDocument.html" class="nav-link active"><i class="fas fa-file-alt"></i> About</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="page">
+
+    <button class="print-btn" onclick="window.print()">📄 Save as PDF (Print → Save as PDF)</button>
+
+    <!-- Cover Block -->
+    <div class="cover-block">
+        <div class="badge">June 2026 — Research & Partnership Document</div>
+        <h1>✊🏾 YouthPolitics Platform</h1>
+        <p style="font-size:1.2rem;font-weight:700;color:#fff;margin-top:0.5rem">Educating the Black Youth of South Africa</p>
+        <p style="margin-top:1rem">A digital platform built to provide accessible, engaging, and comprehensive education about South African politics, world affairs, economic literacy, and personal finance — for the black youth who have been underserved by both the education system and mainstream media.</p>
+        <div class="stat-row" style="margin-top:1.5rem">
+            <div class="stat-box" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:#fff">
+                <div class="num" style="color:#fff">4</div>
+                <div class="lbl" style="color:rgba(255,255,255,0.7)">Core Sections</div>
+            </div>
+            <div class="stat-box" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2)">
+                <div class="num" style="color:#fff">AI</div>
+                <div class="lbl" style="color:rgba(255,255,255,0.7)">Integrated Assistant</div>
+            </div>
+            <div class="stat-box" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2)">
+                <div class="num" style="color:#fff">Free</div>
+                <div class="lbl" style="color:rgba(255,255,255,0.7)">Always Free to Use</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Problem -->
+    <h2>The Problem We Are Solving</h2>
+    <div class="section-block">
+        <div class="two-col">
+            <div class="card card-red">
+                <h3>Educational Gap</h3>
+                <p>South Africa's school curriculum fails to adequately teach students about current politics, economic systems, or financial literacy. Most young people graduate without understanding how their country works.</p>
+            </div>
+            <div class="card card-red">
+                <h3>Information Desert</h3>
+                <p>Mainstream news is written for adults with existing political and economic knowledge. Young people, especially from township communities, find it inaccessible and irrelevant to their lives.</p>
+            </div>
+            <div class="card card-orange">
+                <h3>Short Attention Span</h3>
+                <p>The generation raised on TikTok and Instagram requires information in shorter, more visually engaging formats. Traditional articles and TV news lose this audience entirely.</p>
+            </div>
+            <div class="card card-orange">
+                <h3>Financial Illiteracy</h3>
+                <p>59.7% youth unemployment, yet most young South Africans have never been taught about savings, investment, property ownership, or how to build wealth in SA's economic system.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About the Creator -->
+    <h2>About the Creator — Bongiwe Mokhati</h2>
+    
+    <div class="highlight-box" style="background:linear-gradient(135deg,rgba(29,185,84,0.05),rgba(29,185,84,0.1));border-left:4px solid var(--green)">
+        <p style="font-size:1.05rem;font-weight:600;color:#14833b;margin-bottom:1rem">👩🏾‍💻 Computer Science Student | Tshwane University of Technology</p>
+        <p style="font-weight:600;color:#1a1a1a;margin-bottom:0.8rem">YouthPolitics is my original idea and creation.</p>
+    </div>
+
+    <div class="section-block">
+        <h3 style="color:var(--green-dark);margin-bottom:1rem">The Story Behind YouthPolitics</h3>
+        
+        <p>My name is <strong>Bongiwe Mokhati</strong>, and I am a Computer Science student at Tshwane University of Technology. YouthPolitics is an idea that I came up with and developed independently based on a challenge that I personally experienced.</p>
+
+        <p>As a young person, I wanted to understand what was happening in politics, the economy, and current affairs. However, I often found it difficult to access information that was simple, engaging, and easy to understand. Most news platforms seemed to be designed for people who already had a strong background in politics or economics, while many young people like myself were left feeling confused or overwhelmed.</p>
+
+        <p><strong>The inspiration for YouthPolitics came from my own desire to learn.</strong> I wanted a platform that could educate me about political events, economic issues, and how these topics affect my daily life. While researching and spending time on social media platforms such as TikTok, I realized that many other young people faced the same problem. The issue was not that they did not care about politics or the economy; rather, they did not know where to start, and the available information was often too complex or inaccessible.</p>
+
+        <p>This led me to create YouthPolitics as a solution. The platform is designed to make learning about politics, economics, and current affairs easier, more engaging, and more accessible for young people. It provides information in a way that is understandable, relevant, and connected to real-life experiences. Through YouthPolitics, users can learn about political developments, economic trends, government decisions, elections, and other important topics that shape South Africa and the world.</p>
+
+        <p><strong>YouthPolitics is more than just a website; it is a project that reflects my passion for learning and my commitment to helping other young people become informed citizens.</strong> What started as a tool to make my own life easier and help me understand the world around me has evolved into a platform that can educate, empower, and inspire other young people to become more knowledgeable and actively involved in society.</p>
+
+        <div class="highlight-box" style="margin-top:1.5rem">
+            <p style="font-weight:700;color:#1a1a1a">I proudly claim YouthPolitics as my original idea, developed from my personal experiences, curiosity, and desire to create a solution that addresses a real challenge faced by many young people.</p>
+        </div>
+
+        <p><strong>My vision:</strong> To build a generation of informed youth who have the knowledge and confidence to engage in discussions, make informed decisions, and contribute meaningfully to the future of South Africa.</p>
+
+        <div class="two-col" style="margin-top:2rem">
+            <div>
+                <h4 style="color:var(--green-dark);margin-bottom:0.8rem">🎓 Background</h4>
+                <ul style="list-style:none;padding:0">
+                    <li style="margin-bottom:0.5rem">✅ Computer Science student at TUT</li>
+                    <li style="margin-bottom:0.5rem">✅ Self-taught web developer</li>
+                    <li style="margin-bottom:0.5rem">✅ Passionate about education & technology</li>
+                    <li style="margin-bottom:0.5rem">✅ Committed to youth empowerment</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color:var(--green-dark);margin-bottom:0.8rem">💡 What Makes This Special</h4>
+                <ul style="list-style:none;padding:0">
+                    <li style="margin-bottom:0.5rem">✅ Built entirely by a student</li>
+                    <li style="margin-bottom:0.5rem">✅ Born from lived experience</li>
+                    <li style="margin-bottom:0.5rem">✅ Young woman in tech making an impact</li>
+                    <li style="margin-bottom:0.5rem">✅ Solving a real problem for peers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Solution -->
+    <h2>Our Solution — What YouthPolitics Does</h2>
+    <div class="section-block">
+        <div class="highlight-box">
+            <p style="font-size:1rem;font-weight:600;color:#14833b">YouthPolitics is a free, mobile-first web platform that delivers political education, economic literacy, historical context, and financial skills — in plain, accessible language — built specifically for South Africa's black youth.</p>
+        </div>
+
+        <div class="card card-green">
+            <h3>🏛️ SA Politics</h3>
+            <p>Complete political party profiles (ANC, EFF, DA, MK Party), the full history of black politics from 1912 to 2024, political family trees explaining key figures, the history of state capture, the 2024 election results analysis, and how the GNU works.</p>
+        </div>
+
+        <div class="card card-blue">
+            <h3>🌍 World Politics</h3>
+            <p>How global events (Russia-Ukraine war, Israel-Gaza, US elections, climate change) directly affect South African prices, jobs, and daily life. SA's role in BRICS, the AU, G20, and the WTO explained clearly.</p>
+        </div>
+
+        <div class="card card-green">
+            <h3>💰 Economy & Financial Literacy</h3>
+            <p>Inflation, GDP, interest rates, and unemployment explained in plain language with real examples. Step-by-step guides to saving, budgeting, ETF investing, property investment, NSFAS, and building wealth from zero.</p>
+        </div>
+
+        <div class="card card-purple">
+            <h3>📰 News Explained</h3>
+            <p>Complex news stories broken down with context. Historical background provided so readers understand WHY things are happening. Fake news guidance and trusted sources list.</p>
+        </div>
+
+        <div class="card card-orange">
+            <h3>🤖 AI Assistant</h3>
+            <p>Built-in AI chatbot that can answer any question about SA politics, economy, history, or finance in plain language — like a knowledgeable friend with no political agenda.</p>
+        </div>
+
+        <div class="card card-blue">
+            <h3>⚡ TikTok-style Learning Cards</h3>
+            <p>Bite-sized, swipeable learning cards designed for short attention spans — each explaining one concept in under 60 seconds, with a "go deeper" button for those who want more.</p>
+        </div>
+    </div>
+
+    <!-- Target Audience -->
+    <h2>Who This Is Built For</h2>
+    <div class="section-block">
+        <table>
+            <thead>
+                <tr><th>Audience Segment</th><th>Why They Need This</th><th>Key Content</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Township Youth (16–25)</strong></td>
+                    <td>Disconnected from political processes, no financial education</td>
+                    <td>Financial literacy, political history, news explained</td>
+                </tr>
+                <tr>
+                    <td><strong>High School Students</strong></td>
+                    <td>Curriculum gaps in civics, economics, history</td>
+                    <td>SA history, party profiles, how government works</td>
+                </tr>
+                <tr>
+                    <td><strong>University/TVET Students</strong></td>
+                    <td>Need to understand economic system they're entering</td>
+                    <td>Investing, GDP, NSFAS, career in emerging sectors</td>
+                </tr>
+                <tr>
+                    <td><strong>First-time voters (18–25)</strong></td>
+                    <td>Need to understand parties before voting</td>
+                    <td>Party manifestos, 2024 results, how elections work</td>
+                </tr>
+                <tr>
+                    <td><strong>Employed youth (25–35)</strong></td>
+                    <td>Earning money but don't know how to grow it</td>
+                    <td>Investment guides, property, ETFs, compound interest</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Students to Recruit -->
+    <h2>Students & Researchers We Are Looking For</h2>
+    <p>To expand this platform's depth and accuracy, we are seeking collaboration with students specializing in the following fields. These students would contribute research, fact-checking, content writing, or technical development.</p>
+
+    <div class="section-block">
+        <div class="card card-green">
+            <h3>1. Political Science & International Relations</h3>
+            <p><strong>Why:</strong> To deepen coverage of SA political history, party ideology analysis, and how international organizations (BRICS, AU, UN) affect SA youth.</p>
+            <p><strong>Contribution:</strong> Research papers on political movements, historical analysis, party policy breakdowns, explanations of world events.</p>
+            <div>
+                <span class="tag">Political parties</span>
+                <span class="tag">SA History</span>
+                <span class="tag">Decolonization</span>
+                <span class="tag tag-blue">Black Consciousness</span>
+                <span class="tag tag-blue">Pan-Africanism</span>
+            </div>
+        </div>
+
+        <div class="card card-blue">
+            <h3>2. Economics & Development Studies</h3>
+            <p><strong>Why:</strong> To provide accurate, current economic analysis — explaining how GDP, unemployment, fiscal policy, monetary policy, and global trade affect ordinary South Africans.</p>
+            <p><strong>Contribution:</strong> Translating economic data into accessible explanations, analyzing government budgets, explaining the impact of SARB decisions.</p>
+            <div>
+                <span class="tag tag-blue">Macroeconomics</span>
+                <span class="tag tag-blue">Development economics</span>
+                <span class="tag">Fiscal policy</span>
+                <span class="tag">Budget analysis</span>
+                <span class="tag">Youth unemployment</span>
+            </div>
+        </div>
+
+        <div class="card card-orange">
+            <h3>3. Journalism & Media Studies</h3>
+            <p><strong>Why:</strong> To create clear, engaging, bias-free content that breaks down complex news stories in ways that a 16-year-old in Soweto can understand.</p>
+            <p><strong>Contribution:</strong> News articles with context, explainer content, interviewing political figures and activists, media literacy resources.</p>
+            <div>
+                <span class="tag tag-red">Investigative journalism</span>
+                <span class="tag">Community media</span>
+                <span class="tag">Explainer content</span>
+                <span class="tag tag-blue">Digital storytelling</span>
+            </div>
+        </div>
+
+        <div class="card card-purple">
+            <h3>4. History (especially South African & African History)</h3>
+            <p><strong>Why:</strong> Many news events can only be understood with historical context. We need deep research on black political history, the liberation movement, apartheid's economic legacy, and post-1994 developments.</p>
+            <p><strong>Contribution:</strong> Historical timelines, biographical profiles of political figures, analysis of how history shapes current politics.</p>
+            <div>
+                <span class="tag tag-purple">Anti-apartheid history</span>
+                <span class="tag tag-purple">Pan-African history</span>
+                <span class="tag">Liberation movements</span>
+                <span class="tag">Post-apartheid SA</span>
+            </div>
+        </div>
+
+        <div class="card card-green">
+            <h3>5. Financial Management & Personal Finance</h3>
+            <p><strong>Why:</strong> To create practical, SA-specific guides on budgeting, saving, investing, property, tax, and building wealth that are accurate and actionable for youth with low starting incomes.</p>
+            <p><strong>Contribution:</strong> Financial literacy modules, investment guides, case studies showing how young SA people built wealth, analysis of financial products available to youth.</p>
+            <div>
+                <span class="tag">Personal finance</span>
+                <span class="tag">Investing</span>
+                <span class="tag">Property</span>
+                <span class="tag tag-blue">TFSA / ETFs</span>
+                <span class="tag">Entrepreneurship</span>
+            </div>
+        </div>
+
+        <div class="card card-blue">
+            <h3>6. Computer Science / Web Development</h3>
+            <p><strong>Why:</strong> To improve the platform's technical capabilities — better UI/UX, offline functionality (for users with limited data), improved AI integration, and potentially a mobile app.</p>
+            <p><strong>Contribution:</strong> Technical development, optimization for low-bandwidth users, AI chatbot improvement, progressive web app features, data visualization.</p>
+            <div>
+                <span class="tag tag-blue">Web development</span>
+                <span class="tag tag-blue">AI/ML</span>
+                <span class="tag">Mobile development</span>
+                <span class="tag tag-purple">UX design</span>
+                <span class="tag">Accessibility</span>
+            </div>
+        </div>
+
+        <div class="card card-orange">
+            <h3>7. Education & Curriculum Development</h3>
+            <p><strong>Why:</strong> To ensure content is pedagogically sound and appropriate for different age groups and literacy levels. To potentially align content with the SA school curriculum.</p>
+            <p><strong>Contribution:</strong> Learning pathway design, age-appropriate language guidelines, alignment with CAPS curriculum, assessment tools.</p>
+            <div>
+                <span class="tag">Curriculum design</span>
+                <span class="tag">Pedagogy</span>
+                <span class="tag tag-blue">Educational technology</span>
+                <span class="tag">CAPS alignment</span>
+            </div>
+        </div>
+
+        <div class="card card-purple">
+            <h3>8. Sociology & Social Justice</h3>
+            <p><strong>Why:</strong> To ensure our content accurately reflects the lived experiences of black youth in townships, understands intersectionality, and doesn't inadvertently reproduce inequality.</p>
+            <p><strong>Contribution:</strong> Community feedback research, analysis of how policies affect different communities, social justice framing, youth surveys.</p>
+            <div>
+                <span class="tag tag-purple">Youth sociology</span>
+                <span class="tag tag-purple">Social justice</span>
+                <span class="tag">Community research</span>
+                <span class="tag">Intersectionality</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Collaborate -->
+    <h2>How to Collaborate with YouthPolitics</h2>
+    <div class="section-block">
+        <div class="two-col">
+            <div class="card card-green">
+                <h3>📝 Content Contributors</h3>
+                <p>Write explainer articles, research summaries, or create educational content in your area of study. Get published on the platform and build your portfolio.</p>
+            </div>
+            <div class="card card-blue">
+                <h3>🔍 Research Partners</h3>
+                <p>Use the platform as a real-world case study for your research. We'll provide data and feedback from users to support your academic work.</p>
+            </div>
+            <div class="card card-purple">
+                <h3>💻 Technical Contributors</h3>
+                <p>Work on the platform's development — improve the AI, build mobile features, or create data visualizations. Great for a portfolio or community service project.</p>
+            </div>
+            <div class="card card-orange">
+                <h3>🎓 Academic Partnership</h3>
+                <p>Propose a formal university-level partnership for supervised research, intern placements, or a collaborative community engagement project.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- What Makes This Different -->
+    <h2>Why YouthPolitics Is Different</h2>
+    <div class="section-block">
+        <table>
+            <thead>
+                <tr><th>Feature</th><th>Mainstream Media</th><th>Textbooks</th><th>✊🏾 YouthPolitics</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Language Level</td><td>Adult/complex</td><td>Formal/dry</td><td><strong>Simple & accessible</strong></td></tr>
+                <tr><td>Designed for Black Youth</td><td>❌</td><td>❌</td><td><strong>✅ Specifically</strong></td></tr>
+                <tr><td>Free Access</td><td>Paywalls</td><td>Costs money</td><td><strong>Always free</strong></td></tr>
+                <tr><td>Historical Context</td><td>Limited</td><td>Outdated</td><td><strong>Deep historical context</strong></td></tr>
+                <tr><td>Financial Literacy</td><td>❌</td><td>❌</td><td><strong>✅ Practical guides</strong></td></tr>
+                <tr><td>AI Explanation</td><td>❌</td><td>❌</td><td><strong>✅ Ask anything</strong></td></tr>
+                <tr><td>Mobile-Optimized</td><td>Partial</td><td>❌</td><td><strong>✅ Mobile first</strong></td></tr>
+                <tr><td>Updated Regularly</td><td>Daily (overwhelming)</td><td>Never</td><td><strong>Current — June 2026</strong></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Vision -->
+    <h2>Our Vision</h2>
+    <div class="highlight-box">
+        <h3 style="font-size:1.2rem;margin-bottom:0.7rem">A generation of young black South Africans who are politically informed, economically literate, and empowered to actively shape their country's future.</h3>
+        <p>We believe that knowledge is the foundation of power. When young people understand how the economy works, they can navigate it. When they understand political history, they can demand accountability. When they understand the world, they can position themselves to benefit from its opportunities.</p>
+        <p><strong>Knowledge is Power</strong> — this is our message. This platform is a tool to empower the next generation of informed, engaged South African citizens.</p>
+    </div>
+
+    <!-- Current State -->
+    <h2>Current State of the Platform (June 2026)</h2>
+    <div class="section-block">
+        <ul>
+            <li>✅ <strong>Homepage</strong> — TikTok-style swipe cards, live economic statistics, political figures profiles, history timeline, financial literacy quick guides</li>
+            <li>✅ <strong>SA Politics</strong> — Full party profiles (ANC, DA, EFF, MK), key political issues, complete black political history timeline from 1912–2024, government structure, voting guide</li>
+            <li>✅ <strong>World Politics</strong> — How global events affect SA, SA's role in BRICS/AU/G20, current conflicts (Ukraine, Gaza, DRC), global trends affecting youth</li>
+            <li>✅ <strong>Economy & Finance</strong> — SA economic indicators, interactive charts, financial literacy modules (saving, investing, property, ETFs, compound interest), policy guides</li>
+            <li>✅ <strong>News</strong> — Current SA and world stories with background context, media literacy guide, trusted sources list, timeline 2024–2026</li>
+            <li>✅ <strong>AI Chatbot</strong> — Covers 20+ political, economic, and historical topics with detailed, plain-language responses</li>
+            <li>✅ <strong>Mobile-responsive</strong> — Works on all devices including low-end smartphones</li>
+            <li>⏳ <strong>Needs:</strong> Research contributors, video content, more historical depth, community feedback system, partnership with schools/universities</li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+    <h2>Get Involved</h2>
+    <div class="highlight-box">
+        <p>If you are a student, lecturer, researcher, NGO, or organization that wants to collaborate with YouthPolitics — whether to contribute content, provide research support, develop the platform further, or form a formal partnership — we want to hear from you.</p>
+        <p style="margin-top:1rem;font-weight:700">YouthPolitics is a community project built for the people. Every piece of knowledge added makes it more powerful for the young people who need it most.</p>
+        <div style="margin-top:1.5rem;padding:1.5rem;background:rgba(29,185,84,0.05);border-radius:8px">
+            <p style="font-weight:600;color:#1a1a1a;margin-bottom:0.5rem">📧 Contact Bongiwe Mokhati</p>
+            <p style="font-size:0.95rem;color:#555">Email: bongiwe.youthpolitics@gmail.com</p>
+            <p style="font-size:0.9rem;color:#666;margin-top:0.8rem">Open to: Research partnerships • Student collaborations • Content contributions • Media interviews • Speaking engagements</p>
+        </div>
+    </div>
+
+    <div class="footer-doc">
+        <p><strong>✊🏾 YouthPolitics Platform</strong> — South African Youth Political & Economic Education</p>
+        <p>Created by Bongiwe Mokhati | Document prepared: June 2026 | Data sources: Stats SA, SARB, National Treasury, IEC, World Bank, Parliament of SA</p>
+        <p style="margin-top:0.5rem;font-style:italic">This platform is non-partisan, free to use, and built entirely for educational purposes.</p>
+        <br>
+        <button class="print-btn" onclick="window.print()">📄 Save as PDF</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+    const bar = document.getElementById('scrollProgress');
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (bar) bar.style.width = pct + '%';
+});
+</script>
+</body>
+</html>
